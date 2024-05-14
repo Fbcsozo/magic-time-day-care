@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    text-align: center;
+    display: inline-flex;
+    background-color: purple;
+    color: white;
+    width: 100%;
+    max-height: 150px ;
+    height: 100%;
+
+}
+p {
+    padding: 35px;
+}
+
+.home{
+    margin-top: 50px;
+    margin-left: 50px;
+    width:500px;
+    height: 300px;
+
+}
+
