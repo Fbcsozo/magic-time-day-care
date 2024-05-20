@@ -6,7 +6,7 @@ function Activity () {
 
 	return(
 	<div classname= "activity"> 
-		<img classname= "img-activity" src = "" />
+		<img classname= "img-activity" src = "" alt=""/>
 		<h1> NOSSA MISSÃO </h1>
 		
 		<p> No agitado mundo de hoje, encontrar um ambiente seguro e acolhedor para o cuidado 
@@ -15,7 +15,7 @@ das crianças é essencial. Na Magic Time Daycare, nosso compromisso
 mas um lar longe de casa, onde o bem-estar e a felicidade 
 de cada criança são prioridades máximas."</p>
 
-		<img classname= "img-activity" src = "" />
+		<img classname= "img-activity" src = "" alt=""/>
 		<h1> ATIVIDADES </h1>
 		<div classname="order-list">
 		<ul>

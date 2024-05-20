@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Whoweare () {
 
 	return(
@@ -25,7 +26,7 @@ function Whoweare () {
  poder transformador do cuidado e da importância de investir no futuro de nossas 
  crianças. </p>
 
-		<img classname= "img-whoweare" src = ""/>
+		<img classname= "img-whoweare" src = "" alt=""/>
 	</div>
 );
 

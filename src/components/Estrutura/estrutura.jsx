@@ -1,4 +1,5 @@
 import React from "react";
+import "./estrutura.css";
 
 function Structure () {
 
@@ -15,7 +16,12 @@ function Structure () {
              projetadas para estimular o desenvolvimento físico, cognitivo e 
              emocional das crianças. <br/>
 
-Nosso compromisso com o bem-estar e o desenvolvimento integral das crianças é evidente em tudo o que fazemos. Além disso, acreditamos no poder do brincar como uma ferramenta fundamental para o aprendizado e o desenvolvimento. De atividades artísticas e musicais à jogos educativos e tempo ao ar livre, cada momento na Magic Time é uma oportunidade para as crianças explorarem, descobrirem e se divertirem. </p>
+Nosso compromisso com o bem-estar e o desenvolvimento integral das crianças é 
+evidente em tudo o que fazemos. Além disso, acreditamos no poder do brincar como 
+uma ferramenta fundamental para o aprendizado e o desenvolvimento. 
+De atividades artísticas e musicais à jogos educativos e tempo ao ar livre, 
+cada momento na Magic Time é uma oportunidade para as crianças explorarem, 
+descobrirem e se divertirem. </p>
 	</div>
 );
 

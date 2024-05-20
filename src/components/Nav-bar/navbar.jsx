@@ -1,5 +1,5 @@
 import React from "react";
-import "./magic-time.css";
+import "./navbar.css";
 
 function Navbar (){
 return(
@@ -8,7 +8,7 @@ return(
 <p> ESTRUTURA</p>
 <p> QUEM SOMOS</p>
 <p> GALERIA</p>
-<img src=""/>
+<img src="" alt=""/>
 <p> ATIVIDADES</p>
 <p> CONTATO</p>
 <p> TRADUÇÃO</p>
