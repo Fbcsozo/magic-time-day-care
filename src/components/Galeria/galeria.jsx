@@ -1,24 +1,24 @@
 import React from "react";
 
 
-function Galery () {
+function Galery() {
 
-return (
+	return (
 
-	<div classname="galery" >
-	   <h1 classname="title-galery" > GALERIA </h1>
-	     <div classname="images">		
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-		<img src="" alt=""/>
-	
-	</div>
-</div>
-);
+		<div className="galery" >
+			<h1 className="title-galery" > GALERIA </h1>
+			<div className="images">
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+
+			</div>
+		</div>
+	);
 }
 
 export default Galery;

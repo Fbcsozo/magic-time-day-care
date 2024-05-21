@@ -1,11 +1,10 @@
 import React from "react"
 
-
 function Contact () {
      return(
- <div classname="data-info"> 
+ <div className="data-info"> 
 
-	  <div classname="infos"> 
+	  <div className="infos"> 
 		<h1> DADOS PARA CONTATO </h1>
 
 			<ul>
@@ -18,10 +17,10 @@ function Contact () {
 			<p> 716 bounty dr ap 1617, Foster City - CA, ZIP CODE: 94404 </p>
 	  </div>
 
-	  <div classname="location"> 
+	  <div className="location"> 
 
 		<p> Link da localização </p>
-		<img classname="loc-image" src="" alt="" />	
+		<img className="loc-image" src="" alt="" />	
 	  </div>
 
 </div>

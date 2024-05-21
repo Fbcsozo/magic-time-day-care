@@ -1,12 +1,10 @@
 import React from "react";
 
-
-
 function Activity () {
 
 	return(
-	<div classname= "activity"> 
-		<img classname= "img-activity" src = "" alt=""/>
+	<div className= "activity"> 
+		<img className= "img-activity" src = "" alt=""/>
 		<h1> NOSSA MISSÃO </h1>
 		
 		<p> No agitado mundo de hoje, encontrar um ambiente seguro e acolhedor para o cuidado 
@@ -15,9 +13,9 @@ das crianças é essencial. Na Magic Time Daycare, nosso compromisso
 mas um lar longe de casa, onde o bem-estar e a felicidade 
 de cada criança são prioridades máximas."</p>
 
-		<img classname= "img-activity" src = "" alt=""/>
+		<img className= "img-activity" src = "" alt=""/>
 		<h1> ATIVIDADES </h1>
-		<div classname="order-list">
+		<div className="order-list">
 		<ul>
 			<li>  7:30 -   Drop-off </li>
 			<li>  8:30 -   9:00am Breakfast, clean-up/wash-up </li>

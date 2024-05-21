@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./quemsomos.css";
 
 function Whoweare () {
 
 	return(
-	<div classname= "whoweare"> 
+	<div className= "whoweare"> 
 		<h1> QUEM SOMOS </h1>
 		
 		<p> Meu nome é Nathany Cris Rezende, e minha jornada é uma mistura 
@@ -26,7 +26,7 @@ function Whoweare () {
  poder transformador do cuidado e da importância de investir no futuro de nossas 
  crianças. </p>
 
-		<img classname= "img-whoweare" src = "" alt=""/>
+		<img className= "img-whoweare" src = "" alt=""/>
 	</div>
 );
 
