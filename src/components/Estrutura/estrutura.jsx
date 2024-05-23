@@ -4,17 +4,19 @@ import "./estrutura.css";
 function Structure() {
 
     return (
-        <div className="structure">
+        <div className="structure-1"> 
+
+        <div className="structure-2">
             <h1> NOSSA ESTRUTURA </h1>
             <img src="" alt="" />
-            <p> Localizado em Foster City, o Magic Time Daycare oferece um
+            <p className="text-structure"> Localizado em Foster City, o Magic Time Daycare oferece um
                 ambiente tranquilo e acolhedor para as crianças em um ambiente
                 caseiro. Situado dentro de nossa própria casa, proporcionamos
                 um espaço seguro e familiar onde os pequenos podem se sentir
                 confortáveis e protegidos. Nosso lar se transformou em um ambiente
                 dedicado ao cuidado e à educação infantil, com áreas especialmente
                 projetadas para estimular o desenvolvimento físico, cognitivo e
-                emocional das crianças. <br />
+                emocional das crianças. <br /><br />
 
                 Nosso compromisso com o bem-estar e o desenvolvimento integral das crianças é
                 evidente em tudo o que fazemos. Além disso, acreditamos no poder do brincar como
@@ -22,6 +24,7 @@ function Structure() {
                 De atividades artísticas e musicais à jogos educativos e tempo ao ar livre,
                 cada momento na Magic Time é uma oportunidade para as crianças explorarem,
                 descobrirem e se divertirem. </p>
+        </div>
         </div>
     );
 

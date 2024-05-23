@@ -4,21 +4,23 @@ import Whoweare from "./components/QuemSomos/quemsomos";
 import Galery from "./components/Galeria/galeria";
 import Contact from "./components/Contato/contato"
 import Structure from "./components/Estrutura/estrutura";
-
+import "./App.css";
+import Activity from "./components/Atividades/atividades";
 
 function App() {
   return (
     <div >
-      <Navbar/>
-      <Home/>
-      <Structure/>
-      <Whoweare/>
-      <Galery/>
+      <Navbar />
+      <Home />
+      <Structure />
+      <Whoweare />
+      <Activity />
+      <Galery />
       <Contact />
     </div>
-    
+
   );
- 
+
 }
 
 export default App;
