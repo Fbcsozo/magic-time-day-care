@@ -1,1 +1,31 @@
+.container {
 
+    height: 600px;
+    width: 100%;
+}
+
+.galery{
+    text-align: center;
+}
+.title-galery {
+    padding-top: 100px;
+
+    
+}
+.images{
+    display: inline-block;  
+    padding-top: 40px;
+    
+}
+.row {
+    justify-content: space-between;
+    display: flex;
+    
+}
+.images-line{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5%;
+    border-style: solid;
+}

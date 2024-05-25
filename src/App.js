@@ -6,6 +6,7 @@ import Contact from "./components/Contato/contato"
 import Structure from "./components/Estrutura/estrutura";
 import "./App.css";
 import Activity from "./components/Atividades/atividades";
+import Comments from "./components/Comments/comments";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Whoweare />
       <Activity />
       <Galery />
+      <Comments />
       <Contact />
     </div>
 

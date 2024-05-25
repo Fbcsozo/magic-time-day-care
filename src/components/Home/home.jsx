@@ -10,11 +10,11 @@ function Home() {
                 INCENTIVANDO O DESENVOLVIMENTO SAUDÁVEL E FELIZ. <br/>
                 <br/>
                 VENHA NOS CONHECER! </p>
-            
+                <img className="arthuresamu" src="./images/content/Arthur-Samu.jpeg" alt="arthuresamuel" />
         </div>
+        
         </div>
     );
 
 }
-
 export default Home;
