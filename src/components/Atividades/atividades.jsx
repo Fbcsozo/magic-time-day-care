@@ -4,7 +4,7 @@ function Activity() {
   return (
     <div className="activity-1">
       <div className="activity-2">
-        <img className="img-activity" src="" alt="" />
+        <img className="img-activity" src="./images/content/activity-1.png" alt="" />
         <h1> NOSSA MISSÃO </h1>
 
         <p>
@@ -18,7 +18,9 @@ function Activity() {
       </div>
 
       <div className="activity-3">
-        <img className="img-activity" src="" alt="" />
+        <img className="img-activity" src="./images/content/activity-2.png" alt="activity" />
+        <img className="img-flower" src="./images/content/page5-flowers.png" alt="flower" />
+        <img className="img-pencils" src="./images/content/pencils.png" alt="flower" />
         <h1> ATIVIDADES </h1>
 
         <div className="order-list">

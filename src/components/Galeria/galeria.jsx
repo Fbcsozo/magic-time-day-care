@@ -5,7 +5,10 @@ function Galery() {
 
 	return (
 		<div className="container">
-
+			<img className="yellow" src="./images/content/page5-big-yellow.png" alt="yellow"/>
+			<img className="stars5" src="./images/content/page-5-stars.png" alt="stars"/>
+			<img className="purplebot" src="./images/content/page5-6.png" alt="purple"/>
+			
 			<div className="galery" >
 				<h1 className="title-galery" > GALERIA </h1>
 				<div className="images">

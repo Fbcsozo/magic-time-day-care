@@ -8,6 +8,7 @@ import "./App.css";
 import Activity from "./components/Atividades/atividades";
 import Comments from "./components/Comments/comments";
 
+
 function App() {
   return (
     <div >

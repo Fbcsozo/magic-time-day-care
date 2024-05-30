@@ -3,9 +3,14 @@
   width: 100%;
   height: 442px;
   position: relative;
+  background-image: url("../../../public/images/backgrounds/page1.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
 .home-2 {
+padding-top: 20px;
   margin-left: 300px;
   margin-bottom: 400px;
   width: 350px;
@@ -20,8 +25,7 @@
 }
 .arthuresamu {
   position: absolute;
-  width: 400px;
-  left: 700px;
-
-  top: 100px;
+  width: 150px;
+  left: 200px;
+  top: 350px;
 }

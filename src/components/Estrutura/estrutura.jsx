@@ -8,7 +8,7 @@ function Structure() {
 
         <div className="structure-2">
             <h1> NOSSA ESTRUTURA </h1>
-            <img src="" alt="" />
+           
             <p className="text-structure"> Localizado em Foster City, o Magic Time Daycare oferece um
                 ambiente tranquilo e acolhedor para as crianças em um ambiente
                 caseiro. Situado dentro de nossa própria casa, proporcionamos
@@ -25,6 +25,7 @@ function Structure() {
                 cada momento na Magic Time é uma oportunidade para as crianças explorarem,
                 descobrirem e se divertirem. </p>
         </div>
+        <img className="img-structure "src="./images/content/green-link.png" alt="link" />
         </div>
     );
 

@@ -2,8 +2,12 @@
     height: 600px;
     width: 100%;
     text-align: center;
+    background-image: url("../../../public/images/backgrounds/page6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-h1{
+.comment h1{
     padding-top: 50px;
 }

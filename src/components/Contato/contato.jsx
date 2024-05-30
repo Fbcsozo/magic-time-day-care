@@ -19,13 +19,15 @@ function Contact() {
 				<h1> NOSSA LOCALIZAÇÃO </h1>
 				<p> 716 bounty dr ap 1617, Foster City - CA <br/> ZIP CODE: 94404 </p>
 			</div>
-
+			<img className="twolines"src="./images/content/twolines-page7.png" alt="twolines" />
+			
 			<div className="location">
 
 				<p> Link da localização </p>
 				<img className="loc-image" src="" alt="" />
+			
 			</div>
-
+			
 		</div>
 	);
 }

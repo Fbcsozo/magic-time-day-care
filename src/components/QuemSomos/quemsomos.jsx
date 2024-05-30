@@ -32,9 +32,12 @@ function Whoweare () {
  Cada sorriso, cada abraço, cada pequena conquista é uma lembrança constante do 
  poder transformador do cuidado e da importância de investir no futuro de nossas 
  crianças. </p>
-
-		<img className= "img-whoweare" src = "" alt=""/>
 	</div>
+    <div className="row-images">
+		<img className= "img-whoweare" src = "./images/content/nathanyOnly.jpeg" alt="Nathany"/>
+        <img className= "img-whoweare" src = "./images/content/nathanyAndBoys.jpeg" alt=""/>
+        <img className= "img-whoweare" src = "./images/content/allFamily.jpeg" alt=""/>
+        </div>
     </div>
 );
 
