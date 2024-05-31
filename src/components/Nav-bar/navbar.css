@@ -1,24 +1,26 @@
-
 .nav-bar {
-    
-    display: inline-flex;
-    background-color: purple;
-    color: white;
-    width: 100%;
-    max-height: 80px;
-    height: 100%;
-    padding: 0%;
-    text-align: center;
-    
-
+  display: inline-flex;
+  background-color: purple;
+  color: white;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  padding: 0%;
+  text-align: center;
 }
 
 .nav-bar p {
-    padding: 35px;
-    text-decoration: underline;
-    margin: auto;
+  padding: 30px;
+  text-decoration: underline;
+  margin: auto;
 }
-.icons{
-    display: flex;
-    flex-flow: column;
+.icons {
+  display: flex;
+  flex-flow: column;
+}
+.logo-navbar {
+  width: 90px;
+  height: 90px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }

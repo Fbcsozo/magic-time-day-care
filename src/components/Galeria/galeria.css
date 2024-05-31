@@ -1,7 +1,7 @@
 .container {
-  height: 600px;
+  height: 700px;
   width: 100%;
-position: relative;
+  position: relative;
 }
 
 .galery {
@@ -29,19 +29,20 @@ position: relative;
   border-radius: 5%;
   border-style: solid;
 }
-.yellow{
+.yellow {
   width: 200px;
   position: absolute;
   top: 0;
   left: 0;
 }
-.purplebot{
-width: 300px;
-position: absolute;
-bottom: -100px;
-right: -65px;
+.purplebot {
+  width: 300px;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  z-index: -1;
 }
-.stars5{
+.stars5 {
   width: 200px;
   position: absolute;
   top: 0;

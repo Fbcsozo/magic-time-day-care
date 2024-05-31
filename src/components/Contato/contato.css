@@ -1,27 +1,38 @@
-
-.data-info{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    position: relative;
+.data-info {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  position: relative;
 }
 
-.infos{
-    padding-top: 100px;
-    text-align: left;
-    padding-left: 50px;
+.infos {
+  padding-top: 200px;
+  text-align: left;
+  padding-left: 50px;
 }
-.location{
-    padding-top: 100px;
-    padding-left: 300px;
+.location {
+  padding-top: 200px;
+  padding-left: 500px;
 }
-p{
-    padding-top: 0;
+p {
+  padding-top: 0;
 }
-.twolines{
-    width: 300px;
-    position: absolute;
-    left: 35%;
-    top: 20%;
-    z-index: -1;
+.twolines {
+  width: 300px;
+  position: absolute;
+  left: 610px;
+  top: 25%;
+  z-index: -1;
+}
+.test {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.logo-final {
+  padding-top: 40px;
+  width: 333px;
+  height: 100px;
+  position: absolute;
+  left: 590px;
 }
