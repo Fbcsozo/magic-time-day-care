@@ -56,7 +56,7 @@ const images = [
   "./images/content/samuelwithdraws.jpeg",
 ];
 
-function Galery() {
+function Galery({ language }) {
   const settings = {
     centerMode: true,
     centerPadding: "0",
@@ -79,7 +79,14 @@ function Galery() {
       },
     ],
   };
-
+  const texts = {
+    pt: {
+      title1:"GALERIA",
+    },
+    en: {
+      title1:"GALLERY",
+    },
+  };
   return (
     <div className="container">
       <img

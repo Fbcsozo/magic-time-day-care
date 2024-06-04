@@ -1,7 +1,26 @@
 import React from "react";
 import "./contato.css";
 
-function Contact() {
+function Contact({ language }) {
+  const texts = {
+    pt: {
+      title1:"DADOS PARA CONTATO",
+      title2:"NOSSA LOCALIZAÇÃO",
+      paragraph1:"WHATSAPP",
+      paragraph2:"EMAIL:",
+      paragraph3:"INSTAGRAM:",
+      paragraph4:"Código postal:",
+
+    },
+    en: {
+      title1:"CONTACT INFORMATION",
+      title2:"OUR LOCATION",
+      paragraph1:"WHATSAPP",
+      paragraph2:"EMAIL:",
+      paragraph3:"INSTAGRAM:",
+      paragraph4:"Zip code:",
+    },
+  };
   return (
     <div className="data-info">
       <img
@@ -10,21 +29,21 @@ function Contact() {
         alt="final-img"
       />
       <div className="infos">
-        <h1> DADOS PARA CONTATO </h1>
+        <h1> {texts[language].title1} </h1>
         <ul>
-          <li> WHATSAPP: </li>
-          <li> EMAIL: </li>
-          <li> INSTAGRAM: </li>
+          <li> {texts[language].paragraph1} </li>
+          <li> {texts[language].paragraph2} </li>
+          <li> {texts[language].paragraph3} </li>
         </ul>
         <br />
         <br />
         <br />
         <br />
 
-        <h1> NOSSA LOCALIZAÇÃO </h1>
+        <h1> {texts[language].title2} </h1>
         <p>
           {" "}
-          716 bounty dr ap 1617, Foster City - CA <br /> ZIP CODE: 94404{" "}
+          716 bounty dr ap 1617, Foster City - CA <br /> {texts[language].paragraph4} 94404{" "}
         </p>
       </div>
       <img
@@ -43,7 +62,7 @@ function Contact() {
           Location
         </a>
         {/* <p> Link da localização </p> */}
-        <img className="loc-image" src="" alt="" />
+        <img className="loc-image" src="" alt="location" />
       </div>
     </div>
   );
