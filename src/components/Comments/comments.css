@@ -1,4 +1,4 @@
-.comment {
+/* .comment {
   height: 700px;
   width: 100%;
   text-align: center;
@@ -10,4 +10,78 @@
 
 .comment h1 {
   padding-top: 50px;
+}
+ */
+
+ .comment {
+  height: 700px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../../public/images/backgrounds/page6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.title {
+  padding-top: 50px;
+  color: #333;
+  font-size: 2em;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+
+}
+
+.comment-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.comment-name {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.comment-text {
+  color: #777;
+  font-style: italic;
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 768px) {
+  .comments-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .comment-box {
+    width: 45%; /* Distribui os comentários em duas colunas */
+    margin: 10px; /* Espaçamento entre os comentários */
+  }
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+  .comment-box {
+    width: 90%; /* Utiliza quase toda a largura disponível */
+    margin: 10px auto; /* Centraliza os comentários */
+  }
 }

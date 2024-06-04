@@ -1,4 +1,4 @@
-.activity-1 {
+/* .activity-1 {
   text-align: center;
   width: 100%;
   height: 700px;
@@ -49,4 +49,119 @@ h1 {
   bottom: 0px;
   width: 100%;
   left: 0;
+}
+ */
+ /* Estilos gerais */
+.activity-1 {
+  text-align: center;
+  width: 100%;
+  height: auto; /* Ajuste a altura para ser automática */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 40px; /* Espaço adicional para o conteúdo */
+  padding-top: 150px;
+}
+
+/* Estilos da seção de missão */
+.activity-2 {
+  margin: auto;
+  padding-top: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Estilos da seção de atividades */
+.activity-3 {
+  padding-top: 40px;
+}
+
+/* Estilos da lista de atividades */
+.order-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+  justify-content: center;
+  padding: 20px;
+}
+
+.ul {
+  text-align: left;
+  margin: 30px;
+}
+
+.img-activity {
+  margin: auto;
+  width: 50px;
+  padding: 0;
+}
+
+/* Estilos do título */
+h1 {
+  padding: 0;
+}
+
+/* Estilos das imagens */
+.img-flower {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+.img-pencils {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 140px;
+}
+
+.gram-img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .activity-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .order-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ul {
+    margin: 10px 0;
+  }
+
+  .img-flower, .img-pencils {
+    width: 150px;
+  }
+
+  .img-activity {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .img-flower, .img-pencils {
+    width: 100px;
+  }
+
+  .img-activity {
+    width: 30px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }

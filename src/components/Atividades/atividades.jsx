@@ -43,7 +43,7 @@ function Activity({ language }) {
     },
   };
   return (
-    <div className="activity-1">
+    <div id="activity" className="activity-1">
       <div className="activity-2">
         <img
           className="img-activity"

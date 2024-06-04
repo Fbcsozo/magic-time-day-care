@@ -3,7 +3,7 @@ import "./navbar.css";
 import { MdEmail } from "react-icons/md";
 import { ImInstagram } from "react-icons/im";
 
-function Navbar({ toggleLanguage }) {
+function Navbar({ toggleLanguage, language }) {
   const texts = {
     pt: {
       title1:"INÍCIO",
@@ -28,18 +28,18 @@ function Navbar({ toggleLanguage }) {
   };
   return (
     <div className="nav-bar">
-      <p> {texts.title1}</p>
-      <p> {texts.title2}</p>
-      <p> {texts.title3}</p>
-      <p> {texts.title4}</p>
+      <a href="#home"> {texts[language].title1}</a>
+      <a href="#structure"> {texts[language].title2}</a>
+      <a href="#about"> {texts[language].title3}</a>
+      <a href="#gallery"> {texts[language].title4}</a>
       <img
         className="logo-navbar "
         src="./images/logos/navbar.png"
         alt="navbar"
-      /><p> {texts.title5}</p>
-      <p> {texts.title6}</p>
-      <p> {texts.title7}</p>
-      <button onClick={toggleLanguage}>{texts.title8}</button>
+      /><a href="#activity"> {texts[language].title5}</a>
+      <a href="#comments"> {texts[language].title6}</a>
+      <a  href="#contact"> {texts[language].title7}</a>
+      <button className="translate-button" onClick={toggleLanguage}>{texts[language].title8}</button>
       <div className="icons">
         <MdEmail />
         <ImInstagram />

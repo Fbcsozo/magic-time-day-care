@@ -1,5 +1,14 @@
-body {
+/* body {
   padding: 0;
   margin: 0;
   max-width: 1536px;
+}
+ */
+ body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }

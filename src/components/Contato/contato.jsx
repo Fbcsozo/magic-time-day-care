@@ -22,7 +22,7 @@ function Contact({ language }) {
     },
   };
   return (
-    <div className="data-info">
+    <div id="contact" className="data-info">
       <img
         className="logo-final"
         src="./images/logos/location.png"

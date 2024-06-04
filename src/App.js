@@ -18,12 +18,13 @@ function App() {
 
   return (
     <div>
-      <Navbar toggleLanguage={toggleLanguage} />
+      <Navbar toggleLanguage={toggleLanguage}
+              language={language} />
       <Home language={language} />
       <Structure language={language} />
       <Whoweare language={language} />
       <Activity language={language} />
-      <Galery language={language} />
+      <Galery language={language} /> 
       <Comments language={language} />
       <Contact language={language} />
     </div>

@@ -15,7 +15,7 @@ function Structure({ language }) {
     },
   };
   return (
-    <div className="structure-1">
+    <div id="structure" className="structure-1">
       <img className="star-1 " src="./images/content/star.png" alt="star1" />
       <img className="star-2 " src="./images/content/star.png" alt="star2" />
       <img className="star-3 " src="./images/content/star.png" alt="star3" />

@@ -16,7 +16,7 @@ function Home({ language }) {
   };
 
   return (
-    <div className="home-1">
+    <div id="home"className="home-1">
       <img
         className="cloud"
         src="./images/backgrounds/page-navbar.png"

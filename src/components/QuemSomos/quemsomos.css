@@ -1,4 +1,4 @@
-.whoweare-1 {
+/* .whoweare-1 {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -37,3 +37,107 @@ h1 {
   height: 150px;
   border-radius: 10%;
 }
+ */
+
+ /* Estilos da estrutura principal */
+.whoweare-1 {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Estilos do título */
+h1 {
+  margin: 0;
+  padding: 0;
+  color: purple;
+  font-weight: lighter;
+}
+
+/* Estilos da estrutura principal */
+.whoweare-1 {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Estilos do título */
+h1 {
+  margin: 0;
+  padding: 0;
+  color: purple;
+  font-weight: lighter;
+}
+
+/* Estilos do contêiner de texto */
+.whoweare-2 {
+  padding-top: 80px;
+  padding-left: 70px;
+  max-width: 800px;
+  margin: 0 20px;
+  background-image: url("../../../public/images/backgrounds/page3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50px;
+}
+
+/* Estilos das imagens */
+.row-images {
+  position: absolute;
+  top: 130px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 30px;
+}
+
+.img-whoweare {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .whoweare-2 {
+    padding-top: 50px;
+    padding-left: 20px;
+    max-width: 90%;
+    background-position: center;
+  }
+
+  .row-images {
+    position: static;
+    margin-top: 20px;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .img-whoweare {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whoweare-2 {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .img-whoweare {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-left: 0;
+  }
+}
+
