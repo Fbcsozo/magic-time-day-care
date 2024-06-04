@@ -7,7 +7,7 @@ function Contact() {
       <img
         className="logo-final"
         src="./images/logos/location.png"
-        alt="final-image"
+        alt="final-img"
       />
       <div className="infos">
         <h1> DADOS PARA CONTATO </h1>
@@ -35,7 +35,14 @@ function Contact() {
       <img className="test" src="./images/content/test.png" alt="test" />
 
       <div className="location">
-        <p> Link da localização </p>
+        <a
+          href="https://maps.app.goo.gl/nSVVccDf7bHFdKAz5?g_st=iw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Location
+        </a>
+        {/* <p> Link da localização </p> */}
         <img className="loc-image" src="" alt="" />
       </div>
     </div>

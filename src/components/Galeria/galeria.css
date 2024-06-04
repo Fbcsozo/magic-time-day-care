@@ -1,4 +1,4 @@
-.container {
+/* .container {
   height: 700px;
   width: 100%;
   position: relative;
@@ -42,6 +42,69 @@
   right: 0px;
   z-index: -1;
 }
+.stars5 {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ */
+.container {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.galery {
+  text-align: center;
+}
+
+.title-galery {
+  padding-top: 100px;
+}
+
+.slider-container {
+  padding-top: 40px;
+}
+
+.images-line {
+  width: 200px; /* Ajuste a largura conforme necessário */
+  height: 200px; /* Ajuste a altura conforme necessário */
+  margin: 0 10px; /* Ajusta o espaçamento entre os slides */
+  border-radius: 5%;
+  border-style: solid;
+  transition: transform 0.3s, opacity 0.3s;
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+.slick-center .images-line {
+  transform: scale(1); /* Aumenta o slide central */
+  opacity: 1;
+}
+
+.slick-slide {
+  opacity: 0.5;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+.yellow {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.purplebot {
+  width: 300px;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  z-index: -1;
+}
+
 .stars5 {
   width: 200px;
   position: absolute;
