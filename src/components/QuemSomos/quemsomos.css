@@ -39,13 +39,14 @@ h1 {
 }
  */
 
- /* Estilos da estrutura principal */
+/* Estilos da estrutura principal */
 .whoweare-1 {
   margin: 0;
   padding: 20px;
   width: 100%;
   position: relative;
   box-sizing: border-box;
+  min-height: 700px;
 }
 
 /* Estilos do título */
@@ -140,4 +141,3 @@ h1 {
     padding-left: 0;
   }
 }
-

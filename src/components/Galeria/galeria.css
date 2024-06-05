@@ -64,93 +64,96 @@
 
 
   */
-  .container {
-    height: auto; /* Ajuste a altura para ser automática */
-    width: 100%;
-    position: relative;
-    padding-bottom: 300px; /* Adicione um padding-bottom para espaçamento */
-  }
-  
-  .galery {
-    text-align: center;
-  }
-  
-  .title-galery {
-    padding-top: 100px;
-  }
-  
-  .slider-container {
-    padding-top: 40px;
-  }
-  
+.container {
+  width: 100%;
+  min-height: 700px; /* Define a altura mínima */
+  height: auto;
+  position: relative;
+  padding-bottom: 300px; /* Adicione um padding-bottom para espaçamento */
+  box-sizing: border-box; /* Garante que o padding seja incluído na altura total */
+}
+
+.galery {
+  text-align: center;
+}
+
+.title-galery {
+  padding-top: 100px;
+}
+
+.slider-container {
+  padding-top: 40px;
+}
+
+.images-line {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 5%;
+  border: 2px solid #ddd; /* Adicione uma borda */
+  transition: transform 2s, opacity 1s;
+  object-fit: cover;
+}
+
+.slick-center .images-line {
+  transform: scale(1.05); /* Ajuste a escala para dar destaque */
+  opacity: 1;
+  width: 320px; /* Aumente a largura conforme a escala */
+  height: 320px; /* Aumente a altura conforme a escala */
+}
+
+.slick-slide {
+  opacity: 0.2;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+.yellow {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.purplebot {
+  width: 300px;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  z-index: -1;
+}
+
+.stars5 {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
   .images-line {
-    width: 150px; 
-    height: 150px; 
-    margin: 0 auto; 
-    border-radius: 5%;
-    border: 2px solid #ddd; /* Adicione uma borda */
-    transition: transform 0.3s, opacity 0.2s;
-    object-fit: cover; 
+    width: 150px;
+    height: 150px;
   }
-  
-  .slick-center .images-line {
-    transform: scale(1.1); /* Ajuste a escala para dar destaque */
-    opacity: 1;
-  }
-  
-  .slick-slide {
-    opacity: 0.5;
-  }
-  
-  .slick-center {
-    opacity: 1;
-  }
-  
-  .yellow {
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
   .purplebot {
-    width: 300px;
-    position: absolute;
-    bottom: -100px;
-    right: 0px;
-    z-index: -1;
-  }
-  
-  .stars5 {
     width: 200px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    bottom: -50px;
   }
-  
-  /* Media Queries para Responsividade */
-  @media (max-width: 768px) {
-    .images-line {
-      width: 150px;
-      height: 150px;
-    }
-    .purplebot {
-      width: 200px;
-      bottom: -50px;
-    }
+}
+
+@media (max-width: 480px) {
+  .images-line {
+    width: 100px;
+    height: 100px;
   }
-  
-  @media (max-width: 480px) {
-    .images-line {
-      width: 100px;
-      height: 100px;
-    }
-    .purplebot {
-      width: 150px;
-      bottom: -30px;
-    }
-    .title-galery {
-      font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
-    }
+  .purplebot {
+    width: 150px;
+    bottom: -30px;
   }
-  
+  .title-galery {
+    font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
+  }
+}

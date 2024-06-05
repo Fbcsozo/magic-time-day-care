@@ -1,4 +1,4 @@
-.home-1 {
+/* .home-1 {
   padding-top: 10%;
   width: 100%;
   height: 580px;
@@ -42,6 +42,80 @@
   left: 0;
   transform: rotate(25deg);
 }
+ */
+.home-1 {
+  padding-top: 10%;
+  width: 100%;
+  min-height: 580px; /* Use min-height para garantir que a altura mínima seja respeitada */
+  position: relative;
+  background-image: url("../../../public/images/backgrounds/page1.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
 
+.home-2 {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto; /* Centraliza o container */
+  margin-top: 100px; /* Ajusta o top */
+  width: 350px;
+  background-color: #fff6cf;
+  text-align: center;
+  border: 2px solid #082a44;
+  border-left: none;
+  border-top: none;
+  box-shadow: 10px 10px #e0d5b2;
+  position: relative; /* Necessário para o posicionamento dos elementos internos */
+}
 
- 
+.arthuresamu {
+  position: absolute;
+  width: 150px;
+  left: 0%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  bottom: -300px; /* Ajuste conforme necessário */
+}
+
+.cloud {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rainbow {
+  position: absolute;
+  width: 250px;
+  top: 400px; /* Ajuste conforme necessário */
+  left: -80%;
+  transform: rotate(25deg); /* Rotaciona */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .home-2 {
+    width: 90%; /* Aumenta a largura em telas menores */
+  }
+  .rainbow {
+    width: 200px; /* Ajusta o tamanho do arco-íris em telas menores */
+  }
+  .arthuresamu {
+    width: 120px; /* Ajusta o tamanho da imagem em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-1 {
+    padding-top: 5%; /* Reduz o padding-top em telas muito pequenas */
+  }
+  .rainbow {
+    width: 150px; /* Ajusta ainda mais o tamanho do arco-íris */
+  }
+  .arthuresamu {
+    width: 100px; /* Ajusta ainda mais o tamanho da imagem */
+  }
+  .home-2 {
+    width: 95%; /* Quase toda a largura da tela em dispositivos muito pequenos */
+  }
+}

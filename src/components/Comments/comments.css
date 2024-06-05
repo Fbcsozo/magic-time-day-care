@@ -13,8 +13,9 @@
 }
  */
 
- .comment {
-  height: 700px;
+.comment {
+  min-height: 700px;
+  height: auto;
   width: 100%;
   text-align: center;
   background-image: url("../../../public/images/backgrounds/page6.png");
@@ -24,7 +25,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding: 50px 20px; /* Espaço para conteúdo */
+  box-sizing: border-box; /* Inclui padding na altura total */
 }
 
 .title {
@@ -37,10 +39,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   max-width: 800px;
   width: 100%;
-
+  box-sizing: border-box;
 }
 
 .comment-box {

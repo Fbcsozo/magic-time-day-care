@@ -1,4 +1,4 @@
- /* .nav-bar {
+/* .nav-bar {
   display: inline-flex;
   background-color: purple;
   color: white;
@@ -37,13 +37,13 @@
 
 
  */
- .nav-bar {
+.nav-bar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: purple;
   color: white;
-  width: 1300px;
+  width: 100%;
   padding: 10px;
   text-align: center;
   position: fixed;

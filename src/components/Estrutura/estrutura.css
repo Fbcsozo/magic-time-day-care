@@ -44,13 +44,16 @@ h1 {
 }
 
  */
- /* Estilos da estrutura */
+/* Estilos da estrutura */
 .structure-1 {
   width: 100%;
-  height: auto;
+  min-height: 700px; /* Altura mínima definida */
   position: relative;
   padding: 20px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inclui padding na altura total */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos horizontalmente */
 }
 
 .structure-2 {
@@ -79,7 +82,9 @@ h1 {
   right: 0;
 }
 
-.star-1, .star-2, .star-3 {
+.star-1,
+.star-2,
+.star-3 {
   position: absolute;
 }
 
