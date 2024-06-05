@@ -43,7 +43,7 @@
   transform: rotate(25deg);
 }
  */
-.home-1 {
+ .home-1 {
   padding-top: 10%;
   width: 100%;
   min-height: 580px; /* Use min-height para garantir que a altura mínima seja respeitada */
@@ -52,13 +52,14 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
+
 }
 
 .home-2 {
   padding: 20px;
   margin-left: auto;
   margin-right: auto; /* Centraliza o container */
-  margin-top: 100px; /* Ajusta o top */
+  margin-top: 30px; /* Ajusta o top */
   width: 350px;
   background-color: #fff6cf;
   text-align: center;
@@ -71,24 +72,29 @@
 
 .arthuresamu {
   position: absolute;
-  width: 150px;
-  left: 0%;
-  transform: translateX(-50%); /* Centraliza horizontalmente */
-  bottom: -300px; /* Ajuste conforme necessário */
+  width: 10vw; /* Use unidades relativas */
+  left: 15%; /* Ajuste conforme necessário */
+  bottom: 0%; /* Ajuste conforme necessário */
+}
+.samuelzin{
+  width: 25%;
+  position: absolute;
+  right: 3%;
+  border-radius: 70%;
 }
 
 .cloud {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 15%;
   left: 0;
 }
 
 .rainbow {
   position: absolute;
-  width: 250px;
-  top: 400px; /* Ajuste conforme necessário */
-  left: -80%;
+  width: 20vw; /* Use unidades relativas */
+  bottom: 1%; /* Ajuste conforme necessário */
+  left:-5%; /* Ajuste conforme necessário */
   transform: rotate(25deg); /* Rotaciona */
 }
 
@@ -96,12 +102,16 @@
 @media (max-width: 768px) {
   .home-2 {
     width: 90%; /* Aumenta a largura em telas menores */
+    margin-top: 50px; /* Ajuste conforme necessário */
   }
   .rainbow {
-    width: 200px; /* Ajusta o tamanho do arco-íris em telas menores */
+    width: 20vw; /* Ajusta o tamanho do arco-íris em telas menores */
+    top: 30vh; /* Ajuste conforme necessário */
+    left: -60%; /* Ajuste conforme necessário */
   }
   .arthuresamu {
-    width: 120px; /* Ajusta o tamanho da imagem em telas menores */
+    width: 12vw; /* Ajusta o tamanho da imagem em telas menores */
+    bottom: -20vh; /* Ajuste conforme necessário */
   }
 }
 
@@ -110,12 +120,16 @@
     padding-top: 5%; /* Reduz o padding-top em telas muito pequenas */
   }
   .rainbow {
-    width: 150px; /* Ajusta ainda mais o tamanho do arco-íris */
+    width: 15vw; /* Ajusta ainda mais o tamanho do arco-íris */
+    top: 20vh; /* Ajuste conforme necessário */
+    left: -40%; /* Ajuste conforme necessário */
   }
   .arthuresamu {
-    width: 100px; /* Ajusta ainda mais o tamanho da imagem */
+    width: 10vw; /* Ajusta ainda mais o tamanho da imagem */
+    bottom: -10vh; /* Ajuste conforme necessário */
   }
   .home-2 {
     width: 95%; /* Quase toda a largura da tela em dispositivos muito pequenos */
   }
 }
+

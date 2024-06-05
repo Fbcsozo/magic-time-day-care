@@ -1,69 +1,4 @@
-/* 
-.container {
-  height: 700px;
-  width: 100%;
-  position: relative;
-}
 
-.galery {
-  text-align: center;
-}
-
-.title-galery {
-  padding-top: 100px;
-}
-
-.slider-container {
-  padding-top: 40px;
-}
-
-.images-line {
-  width: 200px; 
-  height: 200px; 
-  margin: 0 10px; 
-  border-radius: 5%;
-  border-style: solid;
-  transition: transform 0.3s, opacity 0.3s;
-  object-fit: cover; 
-}
-
-.slick-center .images-line {
-  transform: scale(1); 
-  opacity: 1;
-}
-
-.slick-slide {
-  opacity: 0.5;
-}
-
-.slick-center {
-  opacity: 1;
-}
-
-.yellow {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.purplebot {
-  width: 300px;
-  position: absolute;
-  bottom: -100px;
-  right: 0px;
-  z-index: -1;
-}
-
-.stars5 {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-
-  */
 .container {
   width: 100%;
   min-height: 700px; /* Define a altura mínima */
@@ -71,6 +6,11 @@
   position: relative;
   padding-bottom: 300px; /* Adicione um padding-bottom para espaçamento */
   box-sizing: border-box; /* Garante que o padding seja incluído na altura total */
+  background-image: url("../../../public/images/backgrounds/page\ 5-gallery.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 .galery {
@@ -78,59 +18,65 @@
 }
 
 .title-galery {
-  padding-top: 100px;
+  padding-top: 15%;
 }
 
 .slider-container {
-  padding-top: 40px;
+  padding-top: 3%;
 }
 
+
+
 .images-line {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   margin: 0 auto;
   border-radius: 5%;
   border: 2px solid #ddd; /* Adicione uma borda */
   transition: transform 2s, opacity 1s;
   object-fit: cover;
+  z-index: -1;
+
 }
 
 .slick-center .images-line {
   transform: scale(1.05); /* Ajuste a escala para dar destaque */
   opacity: 1;
-  width: 320px; /* Aumente a largura conforme a escala */
-  height: 320px; /* Aumente a altura conforme a escala */
+  width: 280px; /* Aumente a largura conforme a escala */
+  height: 280px; /* Aumente a altura conforme a escala */
+
 }
 
 .slick-slide {
   opacity: 0.2;
+  
 }
 
 .slick-center {
   opacity: 1;
 }
 
-.yellow {
+/* .yellow {
   width: 200px;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
-.purplebot {
+/* .purplebot {
   width: 300px;
   position: absolute;
   bottom: -100px;
   right: 0px;
   z-index: -1;
-}
+} */
 
-.stars5 {
+/* .stars5 {
   width: 200px;
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
@@ -138,10 +84,10 @@
     width: 150px;
     height: 150px;
   }
-  .purplebot {
+ /*  .purplebot {
     width: 200px;
     bottom: -50px;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -149,10 +95,10 @@
     width: 100px;
     height: 100px;
   }
-  .purplebot {
+  /* .purplebot {
     width: 150px;
     bottom: -30px;
-  }
+  } */
   .title-galery {
     font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
   }

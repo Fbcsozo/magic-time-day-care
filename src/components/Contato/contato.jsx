@@ -4,21 +4,21 @@ import "./contato.css";
 function Contact({ language }) {
   const texts = {
     pt: {
-      title1:"DADOS PARA CONTATO",
-      title2:"NOSSA LOCALIZAÇÃO",
-      paragraph1:"WHATSAPP",
-      paragraph2:"EMAIL:",
-      paragraph3:"INSTAGRAM:",
-      paragraph4:"Código postal:",
+      title1: "DADOS PARA CONTATO",
+      title2: "NOSSA LOCALIZAÇÃO",
+      paragraph1: "WHATSAPP",
+      paragraph2: "EMAIL:",
+      paragraph3: "INSTAGRAM:",
+      paragraph4: "Código postal:",
 
     },
     en: {
-      title1:"CONTACT INFORMATION",
-      title2:"OUR LOCATION",
-      paragraph1:"WHATSAPP",
-      paragraph2:"EMAIL:",
-      paragraph3:"INSTAGRAM:",
-      paragraph4:"Zip code:",
+      title1: "CONTACT INFORMATION",
+      title2: "OUR LOCATION",
+      paragraph1: "WHATSAPP",
+      paragraph2: "EMAIL:",
+      paragraph3: "INSTAGRAM:",
+      paragraph4: "Zip code:",
     },
   };
   return (
@@ -28,6 +28,7 @@ function Contact({ language }) {
         src="./images/logos/location.png"
         alt="final-img"
       />
+      <img className="loc-image" src="./images/content/location-img.png" alt="location" />
       <div className="infos">
         <h1> {texts[language].title1} </h1>
         <ul>
@@ -62,7 +63,7 @@ function Contact({ language }) {
           Location
         </a>
         {/* <p> Link da localização </p> */}
-        <img className="loc-image" src="" alt="location" />
+
       </div>
     </div>
   );

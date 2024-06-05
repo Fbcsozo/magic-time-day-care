@@ -19,10 +19,10 @@ function Structure({ language }) {
       <img className="star-1 " src="./images/content/star.png" alt="star1" />
       <img className="star-2 " src="./images/content/star.png" alt="star2" />
       <img className="star-3 " src="./images/content/star.png" alt="star3" />
+      <img className="structure-img1 "src="./images/content/structure-1.jpeg" alt="structure"/>
 
       <div className="structure-2">
         <h1> {texts[language].title1} </h1>
-
         <p className="text-structure">
           {texts[language].paragraph1} <br />
           <br />

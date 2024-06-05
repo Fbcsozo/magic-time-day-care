@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="conteiner">
       <Navbar toggleLanguage={toggleLanguage}
               language={language} />
       <Home language={language} />

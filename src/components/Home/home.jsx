@@ -22,11 +22,7 @@ function Home({ language }) {
         src="./images/backgrounds/page-navbar.png"
         alt="cloud"
       />
-
-      <div className="home-2">
-        <p>{texts[language].paragraph1}</p> <br />
-        <p>{texts[language].paragraph2}</p>
-        <img
+      <img
           className="rainbow"
           src="./images/content/image-rainbow.png"
           alt="raibow"
@@ -36,6 +32,16 @@ function Home({ language }) {
           src="./images/content/Arthur-Samu.jpeg"
           alt="arthuresamuel"
         />
+        <img
+          className="samuelzin"
+          src="./images/content/samuelzin.jpeg"
+          alt="samuelzin"
+        />
+
+      <div className="home-2">
+        <p>{texts[language].paragraph1}</p> <br />
+        <p>{texts[language].paragraph2}</p>
+        
       </div>
     </div>
   );

@@ -27,6 +27,7 @@
   align-items: center;
   padding: 50px 20px; /* Espaço para conteúdo */
   box-sizing: border-box; /* Inclui padding na altura total */
+  overflow-x: hidden;
 }
 
 .title {
