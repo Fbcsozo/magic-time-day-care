@@ -102,5 +102,6 @@
   .nav-bar a,
   .translate-button {
     font-size: 14px;
+    height: 1px;
   }
 }

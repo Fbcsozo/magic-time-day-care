@@ -31,7 +31,7 @@
 }
 
 .title {
-  padding-top: 50px;
+  padding-top: 5%;
   color: #333;
   font-size: 2em;
 }
@@ -83,7 +83,7 @@
 /* Estilos para telas menores */
 @media only screen and (max-width: 767px) {
   .comment-box {
-    width: 90%; /* Utiliza quase toda a largura disponível */
-    margin: 10px auto; /* Centraliza os comentários */
+    width: 90%;
+    margin: 10px auto;
   }
 }

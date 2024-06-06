@@ -53,7 +53,6 @@ h1 {
   padding: 20px;
   box-sizing: border-box; /* Inclui padding na altura total */
   display: flex;
-  
 }
 
 .structure-2 {
@@ -76,7 +75,7 @@ h1 {
   width: 25%;
   height: auto;
   position: absolute;
-  bottom: -2%;
+  bottom: 0;
   right: 0;
 }
 
@@ -103,11 +102,12 @@ h1 {
   top: 70px;
   left: 310px;
 }
-.structure-img1{
+.structure-img1 {
   width: 30%;
   position: absolute;
   left: 2%;
   top: 25%;
+  border-radius: 15%;
 }
 /* Media Queries */
 @media (max-width: 768px) {

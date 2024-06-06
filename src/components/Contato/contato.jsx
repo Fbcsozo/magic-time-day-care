@@ -10,7 +10,6 @@ function Contact({ language }) {
       paragraph2: "EMAIL:",
       paragraph3: "INSTAGRAM:",
       paragraph4: "Código postal:",
-
     },
     en: {
       title1: "CONTACT INFORMATION",
@@ -28,7 +27,11 @@ function Contact({ language }) {
         src="./images/logos/location.png"
         alt="final-img"
       />
-      <img className="loc-image" src="./images/content/location-img.png" alt="location" />
+      <img
+        className="loc-image"
+        src="./images/content/location-img.png"
+        alt="location"
+      />
       <div className="infos">
         <h1> {texts[language].title1} </h1>
         <ul>
@@ -38,13 +41,11 @@ function Contact({ language }) {
         </ul>
         <br />
         <br />
-        <br />
-        <br />
-
         <h1> {texts[language].title2} </h1>
         <p>
           {" "}
-          716 bounty dr ap 1617, Foster City - CA <br /> {texts[language].paragraph4} 94404{" "}
+          716 bounty dr ap 1617, Foster City - CA <br />{" "}
+          {texts[language].paragraph4} 94404{" "}
         </p>
       </div>
       <img
@@ -63,7 +64,6 @@ function Contact({ language }) {
           Location
         </a>
         {/* <p> Link da localização </p> */}
-
       </div>
     </div>
   );

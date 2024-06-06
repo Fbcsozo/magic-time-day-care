@@ -11,8 +11,8 @@
 
 .infos {
   position: absolute;
-  padding-top: 15%;
-  left: 5%;
+  padding-top: 12%;
+  left: 15%;
   text-align: left;
   max-width: 800px;
   width: 100%;
@@ -20,7 +20,7 @@
 }
 .location {
   position: absolute;
-  right:0;
+  right: 0%;
   top: 25%;
   max-width: 800px;
   width: 100%;
@@ -44,17 +44,17 @@ p {
 }
 .logo-final {
   position: absolute;
-  padding-top: 40px;
+  padding-top: 5%;
   width: 300px;
   height: 100px;
-  left: 39%;
+  left: 40%;
 }
-  .loc-image{
-    position: absolute;
-    width: 40%;
-    left: 55%;
-    top: 30%
-  }
+.loc-image {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  top: 30%;
+}
 
 @media (max-width: 768px) {
   .infos,
