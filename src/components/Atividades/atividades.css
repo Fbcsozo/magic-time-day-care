@@ -43,14 +43,14 @@ h1 {
 }
 
 .img-flower {
-  width: 200px;
+  width: 15vw;
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 2vh;
 }
 
 .img-pencils {
-  width: 200px;
+  width: 15vw;
   position: absolute;
   right: 0;
   top: 15%;
@@ -64,9 +64,22 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  ul {
+    list-style-type: none;
+    min-width: 400px;
+    padding-top: 42h;
+    padding-left: 4vh;
+  }
+  .activity-1 {
+    min-height: 820px;
+  }
   .activity-2 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .activity-3 .img-activity {
+    padding-top: 10vh;
   }
 
   .order-list {
@@ -78,13 +91,17 @@ h1 {
     margin: 10px 0;
   }
 
-  .img-flower,
+  .img-flower {
+    width: 12vh;
+    bottom: 0vh;
+  }
   .img-pencils {
-    width: 150px;
+    width: 12vh;
+    top: 25vh;
   }
 
   .img-activity {
-    width: 40px;
+    width: 4vw;
   }
 }
 
@@ -94,13 +111,17 @@ h1 {
     padding-right: 5px;
   }
 
-  .img-flower,
+  .img-flower {
+    width: 12vh;
+    bottom: 0vh;
+  }
   .img-pencils {
-    width: 100px;
+    width: 12vh;
+    top: 25vh;
   }
 
   .img-activity {
-    width: 30px;
+    width: 10vw;
   }
 
   h1 {

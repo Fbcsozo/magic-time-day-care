@@ -40,13 +40,14 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .whoweare-1 {
+    height: 850px;
+  }
   .whoweare-2 {
     padding-top: 50px;
     padding-left: 20px;
     max-width: 90%;
-    background-position: center;
-    
-  
+    text-align: justify;
   }
 
   .row-images {
@@ -56,6 +57,7 @@ h1 {
     padding: 0;
     flex-direction: row;
     padding-left: 10vw;
+    bottom: 0vh;
   }
 
   .img-whoweare {
@@ -66,10 +68,20 @@ h1 {
 
 @media (max-width: 480px) {
   .whoweare-2 {
-    padding-top: 20px;
+    padding-top: 10vh;
     padding-left: 10px;
-  }
+    max-width: 90%;
 
+    text-align: justify;
+  }
+  .row-images {
+    position: static;
+    margin-top: 20px;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+    padding-left: 10vw;
+  }
   .img-whoweare {
     width: 100px;
     height: 100px;

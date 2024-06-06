@@ -1,57 +1,10 @@
-/* .structure-1 {
-  width: 100%;
-  height: 700px;
-  position: relative;
-}
-.structure-2 {
-  padding-top: 100px;
-  padding-left: 450px;
-  width: 730px;
-  text-align: left;
-}
-.text-structure {
-  padding-top: 0;
-}
-
-h1 {
-  padding-left: 30px;
-}
-.img-structure {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  bottom: -130px;
-  right: 0;
-}
-.star-1 {
-  position: absolute;
-  width: 50px;
-  top: 50px;
-  left: 250px;
-}
-.star-2 {
-  position: absolute;
-  width: 40px;
-  top: 35px;
-  left: 340px;
-}
-
-.star-3 {
-  position: absolute;
-  width: 30px;
-  top: 70px;
-  left: 310px;
-}
-
- */
-/* Estilos da estrutura */
 .structure-1 {
   width: 100%;
-  min-height: 600px; 
+  min-height: 600px;
   height: auto;
   position: relative;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -86,21 +39,21 @@ h1 {
 }
 
 .star-1 {
-  width: 50px;
-  top: 50px;
-  left: 250px;
+  width: 4vw;
+  top: 4.5vh;
+  left: 15vw;
 }
 
 .star-2 {
-  width: 40px;
-  top: 35px;
-  left: 340px;
+  width: 3vw;
+  top: 4vh;
+  left: 23vw;
 }
 
 .star-3 {
-  width: 30px;
-  top: 70px;
-  left: 310px;
+  width: 2vw;
+  top: 10vh;
+  left: 20vw;
 }
 .structure-img1 {
   width: 30%;
@@ -109,12 +62,22 @@ h1 {
   top: 30vh;
   border-radius: 15%;
 }
-/* Media Queries */
+
 @media (max-width: 768px) {
+  .text-structure {
+    width: 300px;
+    padding-left: 0;
+    text-align: justify;
+  }
+  .structure-1 {
+    height: 750px;
+  }
   .structure-2 {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0;
+    padding-left: 5vw;
   }
 
   .img-structure {
@@ -124,55 +87,63 @@ h1 {
   }
 
   .star-1 {
-    left: 150px;
+    left: 50vw;
   }
 
   .star-2 {
-    left: 200px;
+    left: 40vw;
   }
 
   .star-3 {
-    left: 170px;
+    left: 45vw;
   }
   .structure-img1 {
-    bottom: 0;
+    top: 50vh;
     left: 3vh;
     width: 50vw;
-
   }
 }
 
 @media (max-width: 480px) {
+  .structure-1 {
+    height: 750px;
+  }
   .structure-2 {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    width: 350px;
+    margin: 0;
+    padding-left: 10vw;
   }
-
+  .structure-2 h1 {
+    text-align: center;
+    padding-left: 18vw;
+  }
   .img-structure {
     width: 40vw;
-    bottom: 0;
+    bottom: 12vh;
     right: 0;
+    z-index: -1;
   }
   .structure-img1 {
-    bottom: 0;
-    left: 3vh;
-    width: 50vw;
-
+    top: 60vh;
+    left: 12vh;
+    width: 45vw;
   }
 
   .star-1 {
-    left: 100px;
+    left: 25vw;
   }
 
   .star-2 {
-    left: 150px;
+    left: 20vw;
   }
 
   .star-3 {
-    left: 120px;
+    left: 18vw;
+    top: 2vh;
   }
-
   h1 {
     font-size: 1.5em;
     padding-left: 0;

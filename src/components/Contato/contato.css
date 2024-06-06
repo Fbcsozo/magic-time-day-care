@@ -57,37 +57,64 @@ p {
 }
 
 @media (max-width: 768px) {
+  .data-info {
+    min-height: 800px;
+  }
   .infos,
   .location {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 30vh;
   }
 
   .logo-final {
-    width: 100%;
+    display: flex;
+    width: 60%;
     height: auto;
+    top: 0;
+    left: 9vh;
   }
 
   .twolines {
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .infos,
+  ul,
+  p {
+    margin: 5px;
+  }
+  .infos {
+    width: 80%;
+    padding-top: 26vh;
+  }
   .location {
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 30vh;
   }
 
   .logo-final {
-    width: 100%;
+    display: flex;
+    width: 60%;
     height: auto;
+    top: 10vh;
+    left: 9vh;
   }
 
   .twolines {
     width: 100%;
+    display: none;
+  }
+
+  .loc-image {
+    display: flex;
+    padding-top: 30vh;
+    left: 7vh;
+    width: 70vw;
   }
 }
