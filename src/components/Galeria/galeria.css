@@ -1,15 +1,14 @@
 .container {
   width: 100%;
-  min-height: 700px; /* Define a altura mínima */
+  min-height: 700px; 
   height: auto;
   position: relative;
-  padding-bottom: 300px; /* Adicione um padding-bottom para espaçamento */
-  box-sizing: border-box; /* Garante que o padding seja incluído na altura total */
+  padding-bottom: 300px; 
+  box-sizing: border-box; 
   background-image: url("../../../public/images/backgrounds/page\ 5-gallery.png");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 
 .galery {
@@ -25,21 +24,19 @@
 }
 
 .images-line {
-  width: 170px;
-  height: 170px;
+  width:16vw;
   margin: 0 auto;
   border-radius: 5%;
-  border: 2px solid #ddd; /* Adicione uma borda */
+  border: 2px solid #ddd; 
   transition: transform 1s, opacity 1s;
   object-fit: cover;
   z-index: -1;
 }
 
 .slick-center .images-line {
-  transform: scale(1.05); /* Ajuste a escala para dar destaque */
-  opacity: 1;
-  width: 18vw; /* Aumente a largura conforme a escala */
-  height: 18vw; /* Aumente a altura conforme a escala */
+  transform: scale(1.05); 
+  width: 20vw; 
+  height: 20vw; 
 }
 
 .slick-slide {
@@ -50,50 +47,56 @@
   opacity: 1;
 }
 
-/* .yellow {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 
-/* .purplebot {
-  width: 300px;
-  position: absolute;
-  bottom: -100px;
-  right: 0px;
-  z-index: -1;
-} */
-
-/* .stars5 {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  right: 0;
-} */
-
-/* Media Queries para Responsividade */
 @media (max-width: 768px) {
-  .images-line {
-    width: 150px;
-    height: 150px;
+ 
+  .galery{
+    padding-top: 30vh;  
   }
-  /*  .purplebot {
-    width: 200px;
-    bottom: -50px;
-  } */
+  .container{
+    background-size: 250vw;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 30vh;
+  }
+ 
+  .slick-center .images-line {
+    transform: scale(1.05); 
+    width: 50vw; 
+    height: 50vw; 
+
+  }
+  .slick-slide {
+    opacity: 0;
+  }
+  
+  .slick-center {
+    opacity: 1;
+  }
+
 }
 
 @media (max-width: 480px) {
   .images-line {
-    width: 100px;
-    height: 100px;
+    width: 40vw;
+    height: 40vw;
   }
-  /* .purplebot {
-    width: 150px;
-    bottom: -30px;
-  } */
+  .galery{
+    padding-top: 10vh;  
+  }
+.container{
+  background-size: 250vw;
+  min-height: 500px;
+  height: auto;
+  padding-bottom: 20vh;
+}
+  
   .title-galery {
     font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
+  }
+  .slick-center .images-line {
+    transform: scale(1.05); 
+    width: 50vw; 
+    height: 50vw; 
   }
 }

@@ -45,6 +45,8 @@ h1 {
     padding-left: 20px;
     max-width: 90%;
     background-position: center;
+    
+  
   }
 
   .row-images {
@@ -53,7 +55,7 @@ h1 {
     align-items: center;
     padding: 0;
     flex-direction: row;
-    padding-left: 3%;
+    padding-left: 10vw;
   }
 
   .img-whoweare {
