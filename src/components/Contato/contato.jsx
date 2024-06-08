@@ -1,25 +1,60 @@
-import React from "react";
-import "./contato.css";
+
+import React, { useEffect, useRef, useState } from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import './contato.css';
+
+const mapStyles = {
+  height: '250px',
+  width: '50%',
+  left: "40vh",
+  top: "15vh",
+};
+
+const defaultCenter = {
+  lat: 37.556175,
+  lng: -122.263565,
+};
+
+const CustomMap = ({ center, zoom, children }) => {
+  const [map, setMap] = useState(null);
+
+  const onLoad = mapInstance => {
+    setMap(mapInstance);
+  };
+
+  return (
+    <GoogleMap
+      mapContainerStyle={mapStyles}
+      zoom={zoom}
+      center={center}
+      onLoad={onLoad}
+      mapId="DEMO_MAP_ID"
+    >
+      {children}
+    </GoogleMap>
+  );
+};
 
 function Contact({ language }) {
   const texts = {
     pt: {
-      title1: "DADOS PARA CONTATO",
-      title2: "NOSSA LOCALIZAÇÃO",
-      paragraph1: "WHATSAPP",
-      paragraph2: "EMAIL:",
-      paragraph3: "INSTAGRAM:",
-      paragraph4: "Código postal:",
+      title1: 'DADOS PARA CONTATO',
+      title2: 'NOSSA LOCALIZAÇÃO',
+      paragraph1: 'WHATSAPP: (650) 686-0026',
+      paragraph2: 'EMAIL: MAGICTIMEDAYCARE@GMAIL.COM',
+      paragraph3: 'INSTAGRAM:',
+      paragraph4: 'Código postal:',
     },
     en: {
-      title1: "CONTACT INFORMATION",
-      title2: "OUR LOCATION",
-      paragraph1: "WHATSAPP",
-      paragraph2: "EMAIL:",
-      paragraph3: "INSTAGRAM:",
-      paragraph4: "Zip code:",
+      title1: 'CONTACT INFORMATION',
+      title2: 'OUR LOCATION',
+      paragraph1: 'WHATSAPP: (650) 686-0026',
+      paragraph2: 'EMAIL: MAGICTIMEDAYCARE@GMAIL.COM',
+      paragraph3: 'INSTAGRAM:',
+      paragraph4: 'Zip code:',
     },
   };
+
   return (
     <div id="contact" className="data-info">
       <img
@@ -33,19 +68,18 @@ function Contact({ language }) {
         alt="location"
       />
       <div className="infos">
-        <h1> {texts[language].title1} </h1>
+        <h1>{texts[language].title1}</h1>
         <ul>
-          <li> {texts[language].paragraph1} </li>
-          <li> {texts[language].paragraph2} </li>
-          <li> {texts[language].paragraph3} </li>
+          <li>{texts[language].paragraph1}</li>
+          <li>{texts[language].paragraph2}</li>
+          <li>{texts[language].paragraph3}</li>
         </ul>
         <br />
         <br />
-        <h1> {texts[language].title2} </h1>
+        <h1>{texts[language].title2}</h1>
         <p>
-          {" "}
-          716 bounty dr ap 1617, Foster City - CA <br />{" "}
-          {texts[language].paragraph4} 94404{" "}
+          716 bounty dr ap 1617, Foster City - CA <br />
+          {texts[language].paragraph4} 94404
         </p>
       </div>
       <img
@@ -56,14 +90,14 @@ function Contact({ language }) {
       <img className="test" src="./images/content/test.png" alt="test" />
 
       <div className="location">
-        <a
-          href="https://maps.app.goo.gl/nSVVccDf7bHFdKAz5?g_st=iw"
-          target="_blank"
-          rel="noopener noreferrer"
+        <LoadScript
+          googleMapsApiKey="AIzaSyD_h2fFbdD_PIX3I0n-q1N--1Y32ILY32Q"
+          libraries={['maps', 'places']}
         >
-          Location
-        </a>
-        {/* <p> Link da localização </p> */}
+          <CustomMap center={defaultCenter} zoom={14}>
+            <Marker position={defaultCenter} title="My location" />
+          </CustomMap>
+        </LoadScript>
       </div>
     </div>
   );

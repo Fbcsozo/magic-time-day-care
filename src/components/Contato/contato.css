@@ -1,10 +1,10 @@
-.data-info {
+/* .data-info {
   width: 100%;
-  min-height: 700px; /* Altura mínima definida */
+  min-height: 700px; 
   display: flex;
   position: relative;
-  padding: 20px 0; /* Espaço ao redor do conteúdo */
-  box-sizing: border-box; /* Inclui padding na altura total */
+  padding: 20px 0; 
+  box-sizing: border-box; 
   text-align: center;
   overflow-x: hidden;
 }
@@ -55,6 +55,137 @@ p {
   left: 60%;
   top: 30%;
 }
+
+@media (max-width: 768px) {
+  .data-info {
+    min-height: 800px;
+  }
+  .infos,
+  .location {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30vh;
+  }
+
+  .logo-final {
+    display: flex;
+    width: 60%;
+    height: auto;
+    top: 0;
+    left: 9vh;
+  }
+
+  .twolines {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  ul,
+  p {
+    margin: 5px;
+  }
+  .infos {
+    width: 80%;
+    padding-top: 26vh;
+  }
+  .location {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30vh;
+  }
+
+  .logo-final {
+    display: flex;
+    width: 60%;
+    height: auto;
+    top: 10vh;
+    left: 9vh;
+  }
+
+  .twolines {
+    width: 100%;
+    display: none;
+  }
+
+  .loc-image {
+    display: flex;
+    padding-top: 30vh;
+    left: 7vh;
+    width: 70vw;
+  }
+}
+ */
+
+ .data-info {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.infos {
+  position: absolute;
+  padding-top: 12%;
+  left: 15%;
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.location {
+  position: absolute;
+  right: 0%;
+  top: 25%;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px; 
+}
+
+p {
+  padding-top: 0;
+}
+
+.twolines {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  z-index: -1;
+}
+
+.test {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo-final {
+  position: absolute;
+  padding-top: 5%;
+  width: 300px;
+  height: 100px;
+  left: 40%;
+}
+
+.loc-image {
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  top: 30%;
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .data-info {
