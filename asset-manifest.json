@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/magic-time-day-care/static/css/main.85476c5e.css",
+    "main.js": "/magic-time-day-care/static/js/main.c04b6706.js",
+    "static/media/page6.png": "/magic-time-day-care/static/media/page6.b400c9d5efef45cae6df.png",
+    "static/media/page 5-gallery.png": "/magic-time-day-care/static/media/page 5-gallery.31998d8177a298a57009.png",
+    "static/media/page3.png": "/magic-time-day-care/static/media/page3.564f5080f97c03e32038.png",
+    "static/media/page1.png": "/magic-time-day-care/static/media/page1.005b7f7c6b65d3e0d311.png",
+    "static/media/slick.svg": "/magic-time-day-care/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/magic-time-day-care/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/magic-time-day-care/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/magic-time-day-care/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/magic-time-day-care/index.html",
+    "main.85476c5e.css.map": "/magic-time-day-care/static/css/main.85476c5e.css.map",
+    "main.c04b6706.js.map": "/magic-time-day-care/static/js/main.c04b6706.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85476c5e.css",
+    "static/js/main.c04b6706.js"
+  ]
+}
