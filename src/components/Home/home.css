@@ -1,7 +1,8 @@
-/* .home-1 {
+
+ .home-1 {
   padding-top: 10%;
   width: 100%;
-  height: 580px;
+  min-height: 580px; 
   position: relative;
   background-image: url("../../../public/images/backgrounds/page1.png");
   background-repeat: no-repeat;
@@ -11,55 +12,10 @@
 
 .home-2 {
   padding: 20px;
-  margin-left: 300px;
-  margin-bottom: 400px;
-  width: 350px;
-  height: 200px;
-  background-color: #fff6cf;
-  text-align: center;
-  border-style: solid;
-  border-color: #082a44;
-  border-left: none;
-  border-top: none;
-  box-shadow: 10px 10px #e0d5b2;
-}
-.arthuresamu {
-  position: absolute;
-  width: 150px;
-  left: 240px;
-  top: 490px;
-}
-.cloud {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-.rainbow {
-  position: absolute;
-  width: 250px;
-  top: 500px;
-  left: 0;
-  transform: rotate(25deg);
-}
- */
-/* .home-1 {
-  padding-top: 10%;
-  width: 100%;
-  min-height: 580px; Use min-height para garantir que a altura mínima seja respeitada
-  position: relative;
-  background-image: url("../../../public/images/backgrounds/page1.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-} */
-
-/* .home-2 {
-  padding: 20px;
   margin-left: auto;
   margin-right: auto; 
   margin-top: 18vh; 
-  width: 350px;
+  width: 35vw;
   background-color: #fff6cf;
   text-align: center;
   border: 2px solid #082a44;
@@ -69,97 +25,15 @@
   position: relative; 
 }
 
-.arthuresamu {
+.arthuresamu, .rainbow, .samuelzin {
+  max-width: 30%; 
   position: absolute;
+}
+
+.arthuresamu {
   width: 15vw; 
   left: 17%; 
   bottom: 0%; 
-}
-.samuelzin {
-  width: 25%;
-  position: absolute;
-  right: 3%;
-  border-radius: 70%;
-}
-
-.rainbow {
-  position: absolute;
-  width: 22vw; 
-  bottom: 1%; 
-  left: -5%; 
-  transform: rotate(25deg); 
-}
-
-
-@media (max-width: 768px) {
-  .home-2 {
-    width: 90%; 
-    margin-top: 50px; 
-  }
-  .rainbow {
-    width: 20vw; 
-    top: 30vh; 
-    left: -60%; 
-  }
-  .arthuresamu {
-    width: 12vw; 
-    bottom: -20vh; 
-  }
-}
-
-@media (max-width: 480px) {
-  .home-1 {
-    padding-top: 5%; 
-  }
-  .rainbow {
-    width: 15vw; 
-    top: 20vh; 
-    left: -40%; 
-  }
-  .arthuresamu {
-    width: 10vw; 
-    bottom: -10vh; 
-  }
-  .home-2 {
-    width: 95%; 
-  }
-}
- */
- .home-1 {
-  padding-top: 10%;
-  width: 100%;
-  min-height: 580px; /* Use min-height para garantir que a altura mínima seja respeitada */
-  position: relative;
-  background-image: url("../../../public/images/backgrounds/page1.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-}
-
-.home-2 {
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto; /* Centraliza o container */
-  margin-top: 18vh; /* Ajusta o top */
-  width: 35vw;
-  background-color: #fff6cf;
-  text-align: center;
-  border: 2px solid #082a44;
-  border-left: none;
-  border-top: none;
-  box-shadow: 10px 10px #e0d5b2;
-  position: relative; /* Necessário para o posicionamento dos elementos internos */
-}
-
-.arthuresamu, .rainbow, .samuelzin {
-  max-width: 30%; /* Limita a largura das imagens */
-  position: absolute;
-}
-
-.arthuresamu {
-  width: 15vw; /* Use unidades relativas */
-  left: 17%; /* Ajuste conforme necessário */
-  bottom: 0%; /* Ajuste conforme necessário */
 }
 
 .samuelzin {
@@ -170,13 +44,13 @@
 }
 
 .rainbow {
-  width: 22vw; /* Use unidades relativas */
-  bottom: 1%; /* Ajuste conforme necessário */
-  left: -5%; /* Ajuste conforme necessário */
-  transform: rotate(25deg); /* Rotaciona */
+  width: 22vw; 
+  bottom: 1%; 
+  left: -5%; 
+  transform: rotate(25deg); 
 }
 
-/* Media Queries para Responsividade */
+
 @media (max-width: 768px) {
 
   .home-1{
@@ -215,19 +89,133 @@
 
 @media (max-width: 480px) {
   .home-1 {
-    padding-top: 5%; /* Reduz o padding-top em telas muito pequenas */
+    padding-top: 5%; 
   }
 
   .home-2 {
-    width: 95%; /* Quase toda a largura da tela em dispositivos muito pequenos */
+    width: 95%; 
   }
 
   .arthuresamu, .rainbow, .samuelzin {
-    max-width: 100%; /* Ajusta o tamanho das imagens para telas muito pequenas */
+    max-width: 100%; 
   }
 
   .rainbow {
-    width: 90%; /* Ajusta ainda mais o tamanho do arco-íris */
+    width: 90%; 
   }
 }
 
+/* .home-1 {
+  padding-top: 10%;
+  width: 100%;
+  min-height: 580px;
+  position: relative;
+  background-image: url("../../../public/images/backgrounds/page1.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.home-2 {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18vh;
+  width: 35vw;
+  background-color: #fff6cf;
+  text-align: center;
+  border: 2px solid #082a44;
+  border-left: none;
+  border-top: none;
+  box-shadow: 10px 10px #e0d5b2;
+  position: relative;
+}
+
+.arthuresamu, .rainbow, .samuelzin {
+  max-width: 30%;
+  position: absolute;
+}
+
+.arthuresamu {
+  width: 15vw;
+  left: 17%;
+  bottom: 0%;
+}
+
+.samuelzin {
+  width: 25vw;
+  right: 3%;
+  bottom: 0;
+  border-radius: 70%;
+}
+
+.rainbow {
+  width: 22vw;
+  bottom: 1%;
+  left: -5%;
+  transform: rotate(25deg);
+}
+
+
+@media (max-width: 768px) {
+  .home-1 {
+    min-height: 470px;
+  }
+  .images-mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 10px;
+    height: 20vh;
+  }
+  .home-2 {
+    width: 60%; 
+    margin-top: 2px; 
+  }
+  .arthuresamu, .samuelzin {
+    max-width: 70%;
+    display: flex;
+  }
+  .arthuresamu {
+    width: 40vw;
+    left: 8vw;
+  }
+  .samuelzin {
+    width: 40vw;
+  }
+  .rainbow {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-1 {
+    padding-top: 5%;
+  }
+  .home-2 {
+    width: 95%;
+  }
+  .arthuresamu, .rainbow, .samuelzin {
+    max-width: 100%;
+  }
+  .rainbow {
+    width: 90%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .home-2 {
+    width: 25vw; 
+  }
+  .arthuresamu {
+    width: 12vw;
+  }
+  .samuelzin {
+    width: 20vw;
+  }
+  .rainbow {
+    width: 18vw;
+  }
+} */

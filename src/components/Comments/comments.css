@@ -1,17 +1,4 @@
-/* .comment {
-  height: 700px;
-  width: 100%;
-  text-align: center;
-  background-image: url("../../../public/images/backgrounds/page6.png ");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.comment h1 {
-  padding-top: 50px;
-}
- */
 
 .comment {
   min-height: 700px;
@@ -87,3 +74,78 @@
     margin: 10px auto;
   }
 }
+
+/* comentarios atualizados pelo chat gpt
+
+.comment {
+  min-height: 700px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../../public/images/backgrounds/page6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.title {
+  padding-top: 5%;
+  color: #333;
+  font-size: 2em;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.comment-name {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.comment-text {
+  color: #777;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .comment-box {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .comment-box {
+    width: 90%;
+    margin: 10px auto;
+  }
+} */

@@ -92,7 +92,7 @@
 }
   
   .title-galery {
-    font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
+    font-size: 1.5em; 
   }
   .slick-center .images-line {
     transform: scale(1.05); 
@@ -100,3 +100,102 @@
     height: 50vw; 
   }
 }
+
+/* Galeria atualizada pelo chat gpt
+
+.container {
+  width: 100%;
+  min-height: 700px;
+  height: auto;
+  position: relative;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+  background-image: url("../../../public/images/backgrounds/page 5-gallery.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galery {
+  text-align: center;
+}
+
+.title-galery {
+  padding-top: 15%;
+}
+
+.slider-container {
+  padding-top: 3%;
+}
+
+.images-line {
+  width: 16vw;
+  margin: 0 auto;
+  border-radius: 5%;
+  border: 2px solid #ddd;
+  transition: transform 1s, opacity 1s;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.slick-center .images-line {
+  transform: scale(1.05);
+  width: 20vw;
+  height: 20vw;
+}
+
+.slick-slide {
+  opacity: 0.2;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .galery {
+    padding-top: 30vh;
+  }
+  .container {
+    background-size: 250vw;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 30vh;
+  }
+  .slick-center .images-line {
+    transform: scale(1.05);
+    width: 50vw;
+    height: 50vw;
+  }
+  .slick-slide {
+    opacity: 0;
+  }
+  .slick-center {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .images-line {
+    width: 40vw;
+    height: 40vw;
+  }
+  .galery {
+    padding-top: 10vh;
+  }
+  .container {
+    background-size: 250vw;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 20vh;
+  }
+  .title-galery {
+    font-size: 1.5em;
+  }
+  .slick-center .images-line {
+    transform: scale(1.05);
+    width: 50vw;
+    height: 50vw;
+  }
+}
+ */
