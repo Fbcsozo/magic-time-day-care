@@ -27,7 +27,7 @@
   padding: 20px;
 }
 
-.ul {
+.order-list ul {
   text-align: left;
   margin: 30px;
 }
@@ -38,7 +38,7 @@
   padding: 0;
 }
 
-h1 {
+.activity-2 h1 {
   padding: 0;
 }
 
@@ -64,7 +64,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  ul {
+  .order-list ul {
     list-style-type: none;
     min-width: 400px;
     padding-top: 42h;
@@ -79,16 +79,12 @@ h1 {
   }
 
   .activity-3 .img-activity {
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
 
   .order-list {
     flex-direction: column;
     align-items: center;
-  }
-
-  .ul {
-    margin: 10px 0;
   }
 
   .img-flower {
@@ -124,7 +120,7 @@ h1 {
     width: 10vw;
   }
 
-  h1 {
+  .activity-2 h1 {
     font-size: 1.5em;
   }
 }

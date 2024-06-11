@@ -7,7 +7,7 @@
   padding-top: 1%;
 }
 
-h1 {
+.whoweare-2 h1 {
   margin: 0;
   padding: 0;
   color: purple;
@@ -87,7 +87,7 @@ h1 {
     height: 100px;
   }
 
-  h1 {
+  .whoweare-2 h1 {
     font-size: 1.5em;
     padding-left: 0;
   }

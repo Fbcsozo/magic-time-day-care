@@ -1,4 +1,3 @@
-
 import React from "react";
 import Slider from "react-slick";
 import "./galeria.css";
@@ -58,8 +57,8 @@ function Galery({ language }) {
   };
 
   return (
-    <div  className="container" id="gallery">
-   {/*    <img
+    <div className="container" id="gallery">
+      {/*    <img
         className="yellow"
         src="./images/content/page5-big-yellow.png"
         alt="yellow"
@@ -75,9 +74,9 @@ function Galery({ language }) {
         alt="purple"
       /> */}
 
-      <div className="galery" >
+      <div className="galery">
         <h1 className="title-galery">{texts[language].title1}</h1>
-        <div className="slider-container" >
+        <div className="slider-container">
           <Slider {...settings}>
             {images.map((src, index) => (
               <div key={index} className="slide">

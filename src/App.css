@@ -12,3 +12,7 @@ html {
   width: 100%;
   overflow-x: hidden;
 }
+h1 {
+  color: purple;
+  font-size: 1.5em;
+}
