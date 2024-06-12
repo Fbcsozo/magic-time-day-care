@@ -4,13 +4,11 @@ import "./home.css";
 function Home({ language }) {
   const texts = {
     pt: {
-      paragraph1:
-        "UM LUGAR DE ACOLHIMENTO E SEGURANÇA PARA NOSSAS CRIANÇAS, INCENTIVANDO O DESENVOLVIMENTO SAUDÁVEL E FELIZ",
+      paragraph1: "UM LUGAR DE ACOLHIMENTO E SEGURANÇA PARA NOSSAS CRIANÇAS.",
       paragraph2: "VENHA NOS CONHECER!",
     },
     en: {
-      paragraph1:
-        "A WELCOMING AND SAFE PLACE FOR OUR CHILDREN, ENCOURAGING HEALTHY AND HAPPY DEVELOPMENT",
+      paragraph1: "A WELCOMING AND SAFE PLACE FOR OUR CHILDREN.",
       paragraph2: "COME AND VISIT US!",
     },
   };
@@ -18,7 +16,12 @@ function Home({ language }) {
   return (
     <div id="home" className="home-1">
       <div className="home-2">
-        <p>{texts[language].paragraph1}</p> <br />
+        <img
+          className="only-title"
+          src="./images/logos/only-title.png"
+          alt="onlyTitle"
+        />
+        <p>{texts[language].paragraph1}</p>
         <p>{texts[language].paragraph2}</p>
       </div>
       <div className="images-mobile">

@@ -1,126 +1,21 @@
-
- .home-1 {
-  padding-top: 10%;
-  width: 100%;
-  min-height: 580px; 
-  position: relative;
-  background-image: url("../../../public/images/backgrounds/page1.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-}
-
-.home-2 {
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto; 
-  margin-top: 18vh; 
-  width: 35vw;
-  background-color: #fff6cf;
-  text-align: center;
-  border: 2px solid #082a44;
-  border-left: none;
-  border-top: none;
-  box-shadow: 10px 10px #e0d5b2;
-  position: relative; 
-}
-
-.arthuresamu, .rainbow, .samuelzin {
-  max-width: 30%; 
-  position: absolute;
-}
-
-.arthuresamu {
-  width: 15vw; 
-  left: 17%; 
-  bottom: 0%; 
-}
-
-.samuelzin {
-  width: 25vw;
-  right: 3%;
-  bottom: 0;
-  border-radius: 70%;
-}
-
-.rainbow {
-  width: 22vw; 
-  bottom: 1%; 
-  left: -5%; 
-  transform: rotate(25deg); 
-}
-
-
-@media (max-width: 768px) {
-
-  .home-1{
-    min-height: 470px;
-  }
-  .images-mobile{
-    align-items: center;
-    display: flex;
-    flex-direction:row ;
-    margin: 0 auto;
-    padding: 10px;
-    height: 20vh;
-  }
-  .home-2 {
-    width: 60%; 
-    margin-top: 2px; 
-
-  }
-
-  .arthuresamu, .samuelzin {
-    max-width: 70%; 
-    display: flex;
-  }
-  .arthuresamu{
-    width: 40vw;
-    left: 8vw;
-  }
-  .samuelzin{
-    width: 40vw;
-  }
-  .rainbow{
-    display: none;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .home-1 {
-    padding-top: 5%; 
-  }
-
-  .home-2 {
-    width: 95%; 
-  }
-
-  .arthuresamu, .rainbow, .samuelzin {
-    max-width: 100%; 
-  }
-
-  .rainbow {
-    width: 90%; 
-  }
-}
-
-/* .home-1 {
+.home-1 {
   padding-top: 10%;
   width: 100%;
   min-height: 580px;
   position: relative;
   background-image: url("../../../public/images/backgrounds/page1.png");
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 120%;
   background-position: center;
 }
-
+.only-title {
+  width: 50%;
+}
 .home-2 {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 18vh;
+  margin-top: 5%;
   width: 35vw;
   background-color: #fff6cf;
   text-align: center;
@@ -131,7 +26,9 @@
   position: relative;
 }
 
-.arthuresamu, .rainbow, .samuelzin {
+.arthuresamu,
+.rainbow,
+.samuelzin {
   max-width: 30%;
   position: absolute;
 }
@@ -145,7 +42,7 @@
 .samuelzin {
   width: 25vw;
   right: 3%;
-  bottom: 0;
+  bottom: 5%;
   border-radius: 70%;
 }
 
@@ -156,10 +53,10 @@
   transform: rotate(25deg);
 }
 
-
 @media (max-width: 768px) {
   .home-1 {
-    min-height: 470px;
+    min-height: 910px;
+    background-size: 200%;
   }
   .images-mobile {
     align-items: center;
@@ -170,19 +67,26 @@
     height: 20vh;
   }
   .home-2 {
-    width: 60%; 
-    margin-top: 2px; 
+    width: 50%;
+    padding-top: 70%;
+    margin: 20px auto;
+    margin-top: 0%;
   }
-  .arthuresamu, .samuelzin {
+
+  .arthuresamu,
+  .samuelzin {
     max-width: 70%;
     display: flex;
   }
   .arthuresamu {
-    width: 40vw;
-    left: 8vw;
+    width: 45%;
+    left: 25%;
+    top: 10%;
   }
   .samuelzin {
-    width: 40vw;
+    width: 50vw;
+    top: 65%;
+    right: 25%;
   }
   .rainbow {
     display: none;
@@ -193,29 +97,23 @@
   .home-1 {
     padding-top: 5%;
   }
+
   .home-2 {
-    width: 95%;
+    width: 80%;
+    padding-top: 70%;
+    padding-bottom: 10%;
   }
-  .arthuresamu, .rainbow, .samuelzin {
+
+  .arthuresamu,
+  .rainbow,
+  .samuelzin {
     max-width: 100%;
   }
+
   .rainbow {
     width: 90%;
   }
+  .only-title {
+    width: 70%;
+  }
 }
-
-
-@media (min-width: 1024px) {
-  .home-2 {
-    width: 25vw; 
-  }
-  .arthuresamu {
-    width: 12vw;
-  }
-  .samuelzin {
-    width: 20vw;
-  }
-  .rainbow {
-    width: 18vw;
-  }
-} */

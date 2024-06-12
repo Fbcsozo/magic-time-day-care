@@ -1,10 +1,10 @@
-.container {
+/* .container {
   width: 100%;
-  min-height: 700px; 
+  min-height: 700px;
   height: auto;
   position: relative;
-  padding-bottom: 300px; 
-  box-sizing: border-box; 
+  padding-bottom: 300px;
+  box-sizing: border-box;
   background-image: url("../../../public/images/backgrounds/page\ 5-gallery.png");
   background-position: fixed;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
 
 .title-galery {
   padding-top: 15%;
+  margin: 0;
 }
 
 .slider-container {
@@ -24,19 +25,19 @@
 }
 
 .images-line {
-  width:16vw;
+  width: 16vw;
   margin: 0 auto;
   border-radius: 5%;
-  border: 2px solid #ddd; 
+  border: 2px solid #ddd;
   transition: transform 1s, opacity 1s;
   object-fit: cover;
   z-index: -1;
 }
 
 .slick-center .images-line {
-  transform: scale(1.05); 
-  width: 20vw; 
-  height: 20vw; 
+  transform: scale(1.05);
+  width: 20vw;
+  height: 20vw;
 }
 
 .slick-slide {
@@ -47,61 +48,57 @@
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
- 
-  .galery{
-    padding-top: 30vh;  
+  .galery {
+    padding-top: 30vh;
   }
-  .container{
+  .container {
     background-size: 250vw;
     min-height: 500px;
     height: auto;
     padding-bottom: 30vh;
   }
- 
-  .slick-center .images-line {
-    transform: scale(1.05); 
-    width: 50vw; 
-    height: 50vw; 
 
+  .slick-center .images-line {
+    transform: scale(1.05);
+    width: 60vw;
+    height: 60vw;
   }
   .slick-slide {
     opacity: 0;
   }
-  
+
   .slick-center {
     opacity: 1;
   }
-
 }
 
 @media (max-width: 480px) {
   .images-line {
-    width: 40vw;
-    height: 40vw;
+    width: 50vw;
+    height: 50vw;
   }
-  .galery{
-    padding-top: 10vh;  
+  .galery {
+    padding-top: 10vh;
   }
-.container{
-  background-size: 250vw;
-  min-height: 500px;
-  height: auto;
-  padding-bottom: 20vh;
-}
-  
+  .container {
+    background-size: 250vw;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 20vh;
+  }
+
   .title-galery {
-    font-size: 1.5em; 
+    font-size: 1.5em;
   }
   .slick-center .images-line {
-    transform: scale(1.05); 
-    width: 50vw; 
-    height: 50vw; 
+    transform: scale(1.05);
+    width: 60vw;
+    height: 60vw;
   }
-}
+} */
 
-/* Galeria atualizada pelo chat gpt
+/*  Galeria atualizada pelo chat gpt */
 
 .container {
   width: 100%;
@@ -113,7 +110,7 @@
   background-image: url("../../../public/images/backgrounds/page 5-gallery.png");
   background-position: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .galery {
@@ -122,6 +119,7 @@
 
 .title-galery {
   padding-top: 15%;
+  margin: 0;
 }
 
 .slider-container {
@@ -198,4 +196,3 @@
     height: 50vw;
   }
 }
- */

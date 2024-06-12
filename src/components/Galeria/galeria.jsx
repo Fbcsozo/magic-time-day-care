@@ -5,11 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  "./images/content/allFamily.jpeg",
   "./images/content/arthurDrawingPeople.jpeg",
   "./images/content/boysInBallPool.jpeg",
-  "./images/content/nathanyAndboys.jpeg",
-  "./images/content/nathanyOnly.jpeg",
   "./images/content/nathanyOnly2.jpeg",
   "./images/content/packedLunch.jpeg",
   "./images/content/samuelDirtyHand.jpeg",

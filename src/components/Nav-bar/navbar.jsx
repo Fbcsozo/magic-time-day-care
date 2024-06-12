@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./navbar.css";
 import { MdEmail } from "react-icons/md";
@@ -40,7 +39,7 @@ function Navbar({ toggleLanguage, language }) {
     window.location.href = "mailto:magictimedaycare@gmail.com";
   };
   const openWhatsApp = () => {
-    window.location.href = "https://wa.me/+165068600026";
+    window.open("https://wa.me/+16506860026", "_blank");
   };
   return (
     <div className="navbar-container">
@@ -61,8 +60,15 @@ function Navbar({ toggleLanguage, language }) {
           {texts[language].title8}
         </button>
         <div className="icons">
-          <MdEmail onClick={openGmail}/>
-          <ImInstagram onClick={() => window.open("https://www.instagram.com/magictimedaycare", "_blank")}/>
+          <MdEmail onClick={openGmail} />
+          <ImInstagram
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/magictimedaycare",
+                "_blank"
+              )
+            }
+          />
           <FaSquareWhatsapp onClick={openWhatsApp} />
         </div>
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -71,20 +77,38 @@ function Navbar({ toggleLanguage, language }) {
       </div>
       {isOpen && (
         <div className="mobile-menu">
-          <a href="#home" onClick={toggleMenu}>{texts[language].title1}</a>
-          <a href="#structure" onClick={toggleMenu}>{texts[language].title2}</a>
-          <a href="#about" onClick={toggleMenu}>{texts[language].title3}</a>
-          <a href="#activity" onClick={toggleMenu}>{texts[language].title5}</a>
-          <a href="#gallery" onClick={toggleMenu}>{texts[language].title4}</a>
-          <a href="#comments" onClick={toggleMenu}>{texts[language].title6}</a>
-          <a href="#contact" onClick={toggleMenu}>{texts[language].title7}</a>
+          <a href="#home" onClick={toggleMenu}>
+            {texts[language].title1}
+          </a>
+          <a href="#structure" onClick={toggleMenu}>
+            {texts[language].title2}
+          </a>
+          <a href="#about" onClick={toggleMenu}>
+            {texts[language].title3}
+          </a>
+          <a href="#activity" onClick={toggleMenu}>
+            {texts[language].title5}
+          </a>
+          <a href="#gallery" onClick={toggleMenu}>
+            {texts[language].title4}
+          </a>
+          <a href="#comments" onClick={toggleMenu}>
+            {texts[language].title6}
+          </a>
+          <a href="#contact" onClick={toggleMenu}>
+            {texts[language].title7}
+          </a>
           <button className="translate-button" onClick={toggleLanguage}>
             {texts[language].title8}
           </button>
           <div className="icons">
-          <MdEmail onClick={openGmail}/>
-          <ImInstagram onClick={() => window.open("https://www.instagram.com/seuinstagram", "_blank")}/>
-          <FaSquareWhatsapp onClick={openWhatsApp} />
+            <MdEmail onClick={openGmail} />
+            <ImInstagram
+              onClick={() =>
+                window.open("https://www.instagram.com/seuinstagram", "_blank")
+              }
+            />
+            <FaSquareWhatsapp onClick={openWhatsApp} />
           </div>
         </div>
       )}

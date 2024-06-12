@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 .activity-2 {
-  padding-top: 8%;
+  padding-top: 5%;
   margin: auto;
   max-width: 800px;
   text-align: center;
@@ -24,12 +24,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 20px auto;
 }
 
-.order-list ul {
+.order-list {
   text-align: left;
-  margin: 30px;
+  margin: 30px auto;
 }
 
 .img-activity {
@@ -64,12 +64,19 @@
 }
 
 @media (max-width: 768px) {
-  .order-list ul {
-    list-style-type: none;
+  .order-list {
     min-width: 400px;
-    padding-top: 42h;
+    padding-top: 0%;
     padding-left: 4vh;
   }
+  .ulone {
+    list-style-type: none;
+    padding: 0;
+  }
+  .ultwo {
+    list-style-type: none;
+  }
+
   .activity-1 {
     min-height: 820px;
   }
@@ -102,18 +109,25 @@
 }
 
 @media (max-width: 480px) {
+  .ulone {
+    list-style-type: none;
+    padding: 0;
+  }
+  .ultwo {
+    list-style-type: none;
+  }
   .activity-2 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .img-flower {
     width: 12vh;
-    bottom: 0vh;
+    bottom: 0%;
   }
   .img-pencils {
     width: 12vh;
-    top: 25vh;
+    top: 40%;
   }
 
   .img-activity {
@@ -124,104 +138,3 @@
     font-size: 1.5em;
   }
 }
-
-/* atividades.css:
-
-.activity {
-  width: 100%;
-  min-height: 700px;
-  height: auto;
-  position: relative;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.activity-2 {
-  padding-top: 5%;
-  padding-left: 10%;
-  max-width: 80vw;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.grid-activity {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
-}
-
-.activity-text {
-  width: 90%;
-}
-
-.mission {
-  padding-bottom: 20px;
-  max-width: 80%;
-}
-
-.star-1,
-.star-2,
-.star-3 {
-  position: absolute;
-}
-
-.star-1 {
-  width: 4vw;
-  top: 4.5vh;
-  left: 15vw;
-}
-
-.star-2 {
-  width: 3vw;
-  top: 4vh;
-  left: 23vw;
-}
-
-.star-3 {
-  width: 2vw;
-  top: 10vh;
-  left: 20vw;
-}
-
-@media (max-width: 768px) {
-  .grid-activity {
-    display: block;
-  }
-  .activity-2 {
-    padding-top: 5%;
-    padding-left: 10%;
-    max-width: 80vw;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .mission {
-    padding-bottom: 20px;
-    max-width: 80%;
-  }
-
-  .activity-text {
-    width: 100%;
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .activity-2 {
-    padding-top: 5%;
-    padding-left: 10%;
-    max-width: 90vw;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .mission {
-    padding-bottom: 20px;
-    max-width: 100%;
-  }
-
-  .activity-text {
-    width: 100%;
-    padding-top: 20px;
-  }
-} */

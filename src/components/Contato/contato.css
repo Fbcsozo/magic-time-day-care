@@ -3,7 +3,7 @@
   min-height: 700px;
   display: flex;
   position: relative;
-  padding: 20px 0;
+  padding-top: 20px;
   box-sizing: border-box;
   text-align: center;
   overflow-x: hidden;
@@ -21,8 +21,8 @@
 
 .location {
   position: absolute;
-  right: 15vh;
-  top: 20vh;
+  right: 6%;
+  top: 17%;
   max-width: 800px;
   width: 100%;
   height: auto;
@@ -67,13 +67,14 @@ p {
   .data-info {
     min-height: 850px;
   }
-  .infos,
-  .location {
+  .infos {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15vh;
   }
-
+  .location {
+    top: 22%;
+  }
   .logo-final {
     display: flex;
     width: 60%;
@@ -101,12 +102,12 @@ p {
   }
   .infos {
     width: 80%;
-    padding-top: 23vh;
-    left: 3vh;
+    padding-top: 48%;
+    left: 5%;
   }
   .location {
     padding-top: 18vh;
-    right: 13.6vh;
+    right: 15vh;
     width: 600px;
   }
 
@@ -140,146 +141,3 @@ p {
     padding-left: 30px;
   }
 }
-
-/* .data-info {
-  width: 100%;
-  min-height: 700px;
-  display: flex;
-  position: relative;
-  padding: 20px 0;
-  box-sizing: border-box;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-.infos {
-  position: absolute;
-  padding-top: 12%;
-  left: 15%;
-  text-align: left;
-  max-width: 800px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.location {
-  position: absolute;
-  right: 15vh;
-  top: 20vh;
-  max-width: 800px;
-  width: 100%;
-  height: auto;
-}
-
-p {
-  padding-top: 0;
-}
-
-.twolines {
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
-  z-index: -1;
-}
-
-.test {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.logo-final {
-  position: absolute;
-  padding-top: 5%;
-  width: 300px;
-  height: 100px;
-  left: 40%;
-}
-
-.loc-image {
-  position: absolute;
-  width: 30%;
-  left: 60%;
-  top: 30%;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .data-info {
-    min-height: 850px;
-  }
-  .infos,
-  .location {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15vh;
-  }
-
-  .logo-final {
-    display: flex;
-    width: 60%;
-    height: auto;
-    top: 0;
-    left: 9vh;
-  }
-
-  .twolines {
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-  }
-  .test {
-    display: flex;
-    bottom: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .infos ul {
-    margin: 5px;
-    list-style-type: none;
-  }
-  .infos {
-    width: 80%;
-    padding-top: 23vh;
-    left: 3vh;
-  }
-  .location {
-    padding-top: 18vh;
-    right: 13.6vh;
-    width: 600px;
-  }
-
-  .logo-final {
-    display: flex;
-    width: 60%;
-    height: auto;
-    top: 10vh;
-    left: 9vh;
-  }
-
-  .twolines {
-    width: 100%;
-    display: none;
-  }
-
-  .loc-image {
-    display: flex;
-    padding-top: 30vh;
-    left: 7vh;
-    width: 70vw;
-  }
-  .test {
-    display: flex;
-    bottom: 50px;
-  }
-  .infos p {
-    padding-left: 30px;
-  }
-  .infos h1 {
-    padding-left: 30px;
-  }
-} */
