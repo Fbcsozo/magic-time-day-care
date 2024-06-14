@@ -18,7 +18,7 @@ function Home({ language }) {
       <div className="home-2">
         <img
           className="only-title"
-          src="./images/logos/only-title.png"
+          src="./images/logos/tipografia.png"
           alt="onlyTitle"
         />
         <p>"LIC# 414005103" </p>

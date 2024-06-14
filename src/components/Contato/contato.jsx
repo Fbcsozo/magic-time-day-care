@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React, { useState, useEffect, useRef } from "react";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import "./contato.css";
 
 const mapStyles = {
@@ -30,6 +30,31 @@ const CustomMap = ({ center, zoom, children }) => {
       {children}
     </GoogleMap>
   );
+};
+
+const AdvancedMarker = ({ position, title }) => {
+  const markerRef = useRef(null);
+  const [marker, setMarker] = useState(null);
+
+  useEffect(() => {
+    if (window.google && window.google.maps && window.google.maps.marker) {
+      const markerInstance = new window.google.maps.marker.AdvancedMarkerElement({
+        position,
+        title,
+        map: markerRef.current?.map,
+      });
+      setMarker(markerInstance);
+    }
+  }, [position, title]);
+
+  useEffect(() => {
+    if (marker) {
+      marker.position = position;
+      marker.title = title;
+    }
+  }, [marker, position, title]);
+
+  return <div ref={markerRef} />;
 };
 
 function Contact({ language }) {
@@ -86,7 +111,7 @@ function Contact({ language }) {
             libraries={["maps", "places"]}
           >
             <CustomMap center={defaultCenter} zoom={14}>
-              <Marker position={defaultCenter} title="My location" />
+              <AdvancedMarker position={defaultCenter} title="My location" />
             </CustomMap>
           </LoadScript>
         </div>

@@ -4,7 +4,7 @@ import "./quemsomos.css";
 function Whoweare({ language }) {
   const texts = {
     pt: {
-      title: "QUEM SOMOS?",
+      title: "Sobre",
       paragraph1:
         "Meu nome é Nathany Cris Rezende, e minha jornada é uma mistura apaixonante de cuidado, dedicação e aprendizado contínuo. Nascida no Brasil, minha formação em enfermagem abriu as portas para uma carreira que une minha paixão pela saúde e pelo cuidado infantil. Ao longo dos anos, adquiri experiência valiosa tanto como mãe de dois filhos, quanto como profissional dedicada, meus mais de 5 anos de experiência moldaram minha abordagem, combinando conhecimento técnico com compaixão e empatia. Minha jornada no cuidado infantil vai além do profissionalismo; é uma expressão do meu amor e dedicação às crianças que tenho a honra de cuidar.",
       paragraph2:
@@ -14,7 +14,7 @@ function Whoweare({ language }) {
       /* paragraph4: "Cada sorriso, cada abraço, cada pequena conquista é uma lembrança constante do poder transformador do cuidado e da importância de investir no futuro de nossas crianças.", */
     },
     en: {
-      title: "WHO ARE WE?",
+      title: "About",
       paragraph1:
         "My name is Nathany Cris Rezende, and my journey is a passionate blend of care, dedication, and continuous learning. Born in Brazil, my nursing education opened doors to a career that combines my passion for health and childcare. Over the years, I have gained valuable experience both as a mother of two and as a dedicated professional. My more than 5 years of experience have shaped my approach, blending technical knowledge with compassion and empathy. My journey in childcare goes beyond professionalism; it is an expression of my love and dedication to the children I have the honor to care for.",
       paragraph2:

@@ -10,26 +10,27 @@ function Navbar({ toggleLanguage, language }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const texts = {
-    pt: {
-      title1: "INÍCIO",
-      title2: "ESTRUTURA",
-      title3: " QUEM SOMOS",
-      title4: "GALERIA",
-      title5: "ATIVIDADES",
-      title6: "COMENTÁRIOS",
-      title7: "CONTATO",
-      title8: "TRANSLATE",
-    },
     en: {
       title1: "HOME",
       title2: "STRUCTURE",
-      title3: "WHO ARE WE",
+      title3: "ABOUT",
       title4: "GALERY",
-      title5: "ACTIVITYS",
+      title5: "SCHEDULE",
       title6: "COMMENTS",
       title7: "CONTACT",
       title8: "TRADUÇÃO",
     },
+    pt: {
+      title1: "INÍCIO",
+      title2: "ESTRUTURA",
+      title3: "SOBRE",
+      title4: "GALERIA",
+      title5: "ROTINA",
+      title6: "COMENTÁRIOS",
+      title7: "CONTATO",
+      title8: "TRANSLATE",
+    },
+  
   };
 
   const toggleMenu = () => {

@@ -8,12 +8,13 @@ import Structure from "./components/Estrutura/estrutura";
 import "./App.css";
 import Activity from "./components/Atividades/atividades";
 import Comments from "./components/Comments/comments";
+import './index.css';
 
 function App() {
-  const [language, setLanguage] = useState("pt"); // Estado de idioma (português por padrão)
+  const [language, setLanguage] = useState("en"); // Estado de idioma (português por padrão)
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "pt" ? "en" : "pt"));
+    setLanguage((prevLanguage) => (prevLanguage === "en" ? "pt" : "en"));
   };
 
   return (

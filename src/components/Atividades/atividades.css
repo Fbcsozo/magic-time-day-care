@@ -115,6 +115,8 @@
   }
   .ultwo {
     list-style-type: none;
+    padding: 0;
+    margin-right: 60px;
   }
   .activity-2 {
     padding-left: 2%;
