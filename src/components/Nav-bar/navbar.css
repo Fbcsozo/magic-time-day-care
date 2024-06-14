@@ -26,17 +26,13 @@
 .logo-navbar {
   width: 90px;
   height: 90px;
-  
 }
 
 .icons {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: absolute;
-  right: 1%;
   color: white;
-  width: 3%;
 }
 
 .translate-button {
@@ -44,9 +40,9 @@
   border: none;
   color: white;
   cursor: pointer;
-  padding: 10px auto ;
-  padding-right: 40px;
-  font-family: 'Chicken Pie', sans-serif;
+  padding: 10px auto;
+
+  font-family: "Chicken Pie", sans-serif;
   font-size: 1.1rem;
   text-decoration: underline;
 }

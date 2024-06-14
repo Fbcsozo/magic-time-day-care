@@ -33,7 +33,7 @@ function Structure({ language }) {
           loop
           poster="/images/content/structure-1.jpeg"
         >
-          <source src="/video/daycare.mp4" type="video/mp4" />
+          <source src="./public/video/daycare.mp4" type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
         </video>
         <p className="text-structure">
