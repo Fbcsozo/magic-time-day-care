@@ -21,6 +21,7 @@ function Home({ language }) {
           src="./images/logos/only-title.png"
           alt="onlyTitle"
         />
+        <p>"LIC# 414005103" </p>
         <p>{texts[language].paragraph1}</p>
         <p>{texts[language].paragraph2}</p>
       </div>

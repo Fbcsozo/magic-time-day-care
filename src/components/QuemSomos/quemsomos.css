@@ -17,12 +17,15 @@
 .whoweare-2 {
   padding-top: 12%;
   padding-left: 10vw;
-  max-width: 60%;
+  max-width: 800px;
+  min-height: 550px;
   margin: 0 20px;
+}
+.whoweare-2 p {
   background-image: url("../../../public/images/backgrounds/page3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20vh 14vh;
+  background-position: center;
 }
 
 .row-images {
@@ -41,7 +44,7 @@
 
 @media (max-width: 768px) {
   .whoweare-1 {
-    height: 850px;
+    min-height: 850px;
   }
   .whoweare-2 {
     padding-top: 50px;
