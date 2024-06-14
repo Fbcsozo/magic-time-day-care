@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/magic-time-day-care/static/css/main.16069edf.css",
-    "main.js": "/magic-time-day-care/static/js/main.9f1374f3.js",
-    "static/media/page6.png": "/magic-time-day-care/static/media/page6.b400c9d5efef45cae6df.png",
-    "static/media/page 5-gallery.png": "/magic-time-day-care/static/media/page 5-gallery.31998d8177a298a57009.png",
-    "static/media/page3.png": "/magic-time-day-care/static/media/page3.564f5080f97c03e32038.png",
-    "static/media/page1.png": "/magic-time-day-care/static/media/page1.005b7f7c6b65d3e0d311.png",
-    "static/media/slick.svg": "/magic-time-day-care/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/magic-time-day-care/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/magic-time-day-care/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/magic-time-day-care/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/magic-time-day-care/index.html",
-    "main.16069edf.css.map": "/magic-time-day-care/static/css/main.16069edf.css.map",
-    "main.9f1374f3.js.map": "/magic-time-day-care/static/js/main.9f1374f3.js.map"
+    "main.css": "./static/css/main.2d87d7d8.css",
+    "main.js": "./static/js/main.00de2f32.js",
+    "static/media/page6.png": "./static/media/page6.b400c9d5efef45cae6df.png",
+    "static/media/page 5-gallery.png": "./static/media/page 5-gallery.31998d8177a298a57009.png",
+    "static/media/CHICKENPie.ttf": "./static/media/CHICKENPie.b9fc8a04450e3d1ef829.ttf",
+    "static/media/page3.png": "./static/media/page3.564f5080f97c03e32038.png",
+    "static/media/page1.png": "./static/media/page1.005b7f7c6b65d3e0d311.png",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.2d87d7d8.css.map": "./static/css/main.2d87d7d8.css.map",
+    "main.00de2f32.js.map": "./static/js/main.00de2f32.js.map"
   },
   "entrypoints": [
-    "static/css/main.16069edf.css",
-    "static/js/main.9f1374f3.js"
+    "static/css/main.2d87d7d8.css",
+    "static/js/main.00de2f32.js"
   ]
 }
