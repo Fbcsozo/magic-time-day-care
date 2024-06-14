@@ -2,142 +2,99 @@
   width: 100%;
   min-height: 700px;
   display: flex;
-  position: relative;
   padding-top: 20px;
   box-sizing: border-box;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
   overflow-x: hidden;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  padding-top: 70px;
 }
 
 .infos {
-  position: absolute;
-  padding-top: 12%;
-  left: 15%;
+  flex: 1;
   text-align: left;
-  max-width: 800px;
-  width: 100%;
-  box-sizing: border-box;
+  margin-left: 100px;
 }
 
 .location {
-  position: absolute;
-  right: 6%;
-  top: 17%;
-  max-width: 800px;
-  width: 100%;
-  height: auto;
-}
+  flex: 1;
 
-p {
-  padding-top: 0;
+  margin-right: 120px;
 }
 
 .twolines {
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
-  z-index: -1;
+  align-self: center;
+  width: 30%;
+  height: auto;
 }
 
 .test {
   position: absolute;
   bottom: 0;
+  height: auto;
   width: 100%;
 }
 
 .logo-final {
-  position: absolute;
-  padding-top: 5%;
+  padding-top: 80px;
   width: 300px;
-  height: 100px;
-  left: 40%;
-}
-
-.loc-image {
-  position: absolute;
-  width: 30%;
-  left: 60%;
-  top: 30%;
-  display: none;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-  .data-info {
-    min-height: 850px;
-  }
-  .infos {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15vh;
-  }
-  .location {
-    top: 22%;
-  }
-  .logo-final {
-    display: flex;
-    width: 60%;
-    height: auto;
-    top: 0;
-    left: 9vh;
+  .content {
+    flex-direction: column;
+    align-items: center;
   }
 
   .twolines {
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
     display: none;
   }
-  .test {
-    display: flex;
-    bottom: 0;
+
+  .location {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .infos ul {
-    margin: 5px;
+    margin: 20px auto;
     list-style-type: none;
   }
-  .infos {
-    width: 80%;
-    padding-top: 48%;
-    left: 5%;
+  .data-info {
+    min-height: 830px;
   }
+  .content {
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .infos {
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
   .location {
-    padding-top: 18vh;
-    right: 15vh;
-    width: 600px;
+    width: 90%;
+    margin: 0;
   }
 
   .logo-final {
-    display: flex;
     width: 60%;
     height: auto;
-    top: 10vh;
-    left: 9vh;
-  }
-
-  .twolines {
-    width: 100%;
-    display: none;
-  }
-
-  .loc-image {
-    display: flex;
-    padding-top: 30vh;
-    left: 7vh;
-    width: 70vw;
-  }
-  .test {
-    display: flex;
-    bottom: 50px;
-  }
-  .infos p {
-    padding-left: 30px;
-  }
-  .infos h1 {
-    padding-left: 30px;
+    padding: 0;
   }
 }

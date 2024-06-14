@@ -24,29 +24,28 @@ function Structure({ language }) {
       <img className="star-2 " src="./images/content/star.png" alt="star2" />
       <img className="star-3 " src="./images/content/star.png" alt="star3" />
       <h1> {texts[language].title1} </h1>
-      <video
-        width="300"
-        controls
-        autoPlay
-        loop
-        poster="/images/content/structure-1.jpeg"
-      >
-        <source src="/video/daycare.mp4" type="video/mp4" />
-        Seu navegador não suporta a tag de vídeo.
-      </video>
-
-      <img
-        className="img-structure"
-        src="./images/content/green-link.png"
-        alt="link"
-      />
 
       <div className="structure-2">
+        <video
+          width="250"
+          controls
+          autoPlay
+          loop
+          poster="/images/content/structure-1.jpeg"
+        >
+          <source src="/video/daycare.mp4" type="video/mp4" />
+          Seu navegador não suporta a tag de vídeo.
+        </video>
         <p className="text-structure">
           {texts[language].paragraph1} <br />
           <br />
           {texts[language].paragraph2}
         </p>
+        <img
+          className="img-structure"
+          src="./images/content/green-link.png"
+          alt="link"
+        />
       </div>
     </div>
   );

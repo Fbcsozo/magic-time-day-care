@@ -75,7 +75,7 @@
 
   .arthuresamu,
   .samuelzin {
-    max-width: 70%;
+    max-width: 70vh;
     display: flex;
   }
   .arthuresamu {
@@ -97,7 +97,11 @@
   .home-1 {
     padding-top: 5%;
   }
-
+  .images-mobile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .home-2 {
     width: 80%;
     padding-top: 70%;
@@ -107,7 +111,7 @@
   .arthuresamu,
   .rainbow,
   .samuelzin {
-    max-width: 100%;
+    max-width: 70vh;
   }
 
   .rainbow {

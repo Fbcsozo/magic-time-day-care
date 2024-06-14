@@ -4,9 +4,7 @@ import "./contato.css";
 
 const mapStyles = {
   height: "250px",
-  width: "50%",
-  left: "40vh",
-  top: "15vh",
+  width: "100%",
 };
 
 const defaultCenter = {
@@ -61,38 +59,39 @@ function Contact({ language }) {
         src="./images/logos/location.png"
         alt="final-img"
       />
+      <div className="content">
+        <div className="infos">
+          <h1>{texts[language].title1}</h1>
+          <ul>
+            <li>{texts[language].paragraph1}</li>
+            <li>{texts[language].paragraph2}</li>
+            <li>{texts[language].paragraph3}</li>
+          </ul>
+          <br />
+          <h1>{texts[language].title2}</h1>
+          <p>
+            716 bounty dr ap 1617, Foster City - CA <br />
+            {texts[language].paragraph4} 94404
+          </p>
+        </div>
+        <img
+          className="twolines"
+          src="./images/content/twolines-page7.png"
+          alt="twolines"
+        />
 
-      <div className="infos">
-        <h1>{texts[language].title1}</h1>
-        <ul>
-          <li>{texts[language].paragraph1}</li>
-          <li>{texts[language].paragraph2}</li>
-          <li>{texts[language].paragraph3}</li>
-        </ul>
-        <br />
-        <h1>{texts[language].title2}</h1>
-        <p>
-          716 bounty dr ap 1617, Foster City - CA <br />
-          {texts[language].paragraph4} 94404
-        </p>
+        <div className="location">
+          <LoadScript
+            googleMapsApiKey="AIzaSyD_h2fFbdD_PIX3I0n-q1N--1Y32ILY32Q"
+            libraries={["maps", "places"]}
+          >
+            <CustomMap center={defaultCenter} zoom={14}>
+              <Marker position={defaultCenter} title="My location" />
+            </CustomMap>
+          </LoadScript>
+        </div>
       </div>
-      <img
-        className="twolines"
-        src="./images/content/twolines-page7.png"
-        alt="twolines"
-      />
       <img className="test" src="./images/content/test.png" alt="test" />
-
-      <div className="location">
-        <LoadScript
-          googleMapsApiKey="AIzaSyD_h2fFbdD_PIX3I0n-q1N--1Y32ILY32Q"
-          libraries={["maps", "places"]}
-        >
-          <CustomMap center={defaultCenter} zoom={14}>
-            <Marker position={defaultCenter} title="My location" />
-          </CustomMap>
-        </LoadScript>
-      </div>
     </div>
   );
 }
