@@ -37,8 +37,8 @@ const AdvancedMarker = ({ position, title }) => {
   const [marker, setMarker] = useState(null);
 
   useEffect(() => {
-    if (window.google && window.google.maps && window.google.maps.marker) {
-      const markerInstance = new window.google.maps.marker.AdvancedMarkerElement({
+    if (window.google && window.google.maps) {
+      const markerInstance = new window.google.maps.Marker({
         position,
         title,
         map: markerRef.current?.map,
@@ -49,8 +49,8 @@ const AdvancedMarker = ({ position, title }) => {
 
   useEffect(() => {
     if (marker) {
-      marker.position = position;
-      marker.title = title;
+      marker.setPosition(position);
+      marker.setTitle(title);
     }
   }, [marker, position, title]);
 
@@ -64,7 +64,7 @@ function Contact({ language }) {
       title2: "NOSSA LOCALIZAÇÃO",
       paragraph1: "Whatsapp: (650) 686-0026",
       paragraph2: "Email: magictimedaycare@gmail.com",
-      paragraph3: "Instagram:magictimedaycare",
+      paragraph3: "Instagram: magictimedaycare",
       paragraph4: "Código postal:",
     },
     en: {
@@ -109,6 +109,7 @@ function Contact({ language }) {
           <LoadScript
             googleMapsApiKey="AIzaSyD_h2fFbdD_PIX3I0n-q1N--1Y32ILY32Q"
             libraries={["maps", "places"]}
+            loadingElement={<div style={{ height: `100%` }} />}
           >
             <CustomMap center={defaultCenter} zoom={14}>
               <AdvancedMarker position={defaultCenter} title="My location" />

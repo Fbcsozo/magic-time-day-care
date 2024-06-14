@@ -45,17 +45,17 @@ function Whoweare({ language }) {
       <div className="row-images">
         <img
           className="img-whoweare"
-          src="./images/content/nathanyOnly.jpeg"
+          src="/images/content/nathanyOnly.jpeg"
           alt="Nathany"
         />
         <img
           className="img-whoweare"
-          src="./images/content/nathanyAndBoys.jpeg"
-          alt="Nathany and boys"
+          src="/images/content/nathanyAndBoys.jpeg"
+          alt="img-picture"
         />
         <img
           className="img-whoweare"
-          src="./images/content/allFamily.jpeg"
+          src="/images/content/allFamily.jpeg"
           alt="All family"
         />
       </div>

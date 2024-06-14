@@ -20,9 +20,9 @@ function Structure({ language }) {
   };
   return (
     <div id="structure" className="structure-1">
-      <img className="star-1 " src="./images/content/star.png" alt="star1" />
-      <img className="star-2 " src="./images/content/star.png" alt="star2" />
-      <img className="star-3 " src="./images/content/star.png" alt="star3" />
+      <img className="star-1 " src="/images/content/star.png" alt="star1" />
+      <img className="star-2 " src="/images/content/star.png" alt="star2" />
+      <img className="star-3 " src="/images/content/star.png" alt="star3" />
       <h1> {texts[language].title1} </h1>
 
       <div className="structure-2">
@@ -33,7 +33,7 @@ function Structure({ language }) {
           loop
           poster="/images/content/structure-1.jpeg"
         >
-          <source src="./public/video/daycare.mp4" type="video/mp4" />
+          <source src="/video/daycare.mp4" type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
         </video>
         <p className="text-structure">
@@ -43,7 +43,7 @@ function Structure({ language }) {
         </p>
         <img
           className="img-structure"
-          src="./images/content/green-link.png"
+          src="/images/content/green-link.png"
           alt="link"
         />
       </div>
