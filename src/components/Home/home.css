@@ -15,11 +15,11 @@
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 35vw;
   background-color: #fff4e2;
   text-align: center;
-  border: 2px solid #082a44;
+  border: 2px solid white;
   border-left: none;
   border-top: none;
   box-shadow: 10px 10px #fff4e2;
@@ -44,6 +44,7 @@
   right: 3%;
   bottom: 5%;
   border-radius: 70%;
+  border: 5px solid #35ae2a; /* Aqui adicionamos a moldura */
 }
 
 .rainbow {
