@@ -1,61 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import "./contato.css";
-
-const mapStyles = {
-  height: "250px",
-  width: "100%",
-};
-
-const defaultCenter = {
-  lat: 37.556175,
-  lng: -122.263565,
-};
-
-const CustomMap = ({ center, zoom, children }) => {
-  const [map, setMap] = useState(null);
-
-  const onLoad = (mapInstance) => {
-    setMap(mapInstance);
-  };
-
-  return (
-    <GoogleMap
-      mapContainerStyle={mapStyles}
-      zoom={zoom}
-      center={center}
-      onLoad={onLoad}
-      mapId="DEMO_MAP_ID"
-    >
-      {children}
-    </GoogleMap>
-  );
-};
-
-const AdvancedMarker = ({ position, title }) => {
-  const markerRef = useRef(null);
-  const [marker, setMarker] = useState(null);
-
-  useEffect(() => {
-    if (window.google && window.google.maps) {
-      const markerInstance = new window.google.maps.Marker({
-        position,
-        title,
-        map: markerRef.current?.map,
-      });
-      setMarker(markerInstance);
-    }
-  }, [position, title]);
-
-  useEffect(() => {
-    if (marker) {
-      marker.setPosition(position);
-      marker.setTitle(title);
-    }
-  }, [marker, position, title]);
-
-  return <div ref={markerRef} />;
-};
 
 function Contact({ language }) {
   const texts = {
@@ -75,6 +20,34 @@ function Contact({ language }) {
       paragraph3: "Instagram: magictimedaycare",
       paragraph4: "Zip code:",
     },
+  };
+
+  const mapStyles = {
+    height: "400px",
+    width: "100%",
+  };
+
+  const defaultCenter = useMemo(() => {
+    return {
+      lat: 37.55614756641862, 
+      lng: -122.26327041866297, 
+    };
+  }, []); // Esta dependência vazia garante que defaultCenter seja calculado apenas uma vez
+
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (mapRef.current) {
+      new window.google.maps.Marker({
+        position: defaultCenter,
+        map: mapRef.current,
+      });
+    }
+  }, [mapRef, defaultCenter]);
+
+  const scriptOptions = {
+    googleMapsApiKey: "AIzaSyB_Eq00MJznd01Yt-FH7F7H2yXhg3TD2Fg",
+    libraries: ["maps"],
   };
 
   return (
@@ -99,21 +72,26 @@ function Contact({ language }) {
             {texts[language].paragraph4} 94404
           </p>
         </div>
+       
         <img
           className="twolines"
           src="./images/content/twolines-page7.png"
           alt="twolines"
         />
-
-        <div className="location">
+         <div className="location">
           <LoadScript
-            googleMapsApiKey="AIzaSyD_h2fFbdD_PIX3I0n-q1N--1Y32ILY32Q"
-            libraries={["maps", "places"]}
-            loadingElement={<div style={{ height: `100%` }} />}
+            googleMapsApiKey={scriptOptions.googleMapsApiKey}
+            libraries={scriptOptions.libraries}
+            loadingElement={<div>Loading...</div>}
           >
-            <CustomMap center={defaultCenter} zoom={14}>
-              <AdvancedMarker position={defaultCenter} title="My location" />
-            </CustomMap>
+            <GoogleMap
+              mapContainerStyle={mapStyles}
+              zoom={13}
+              center={defaultCenter}
+              onLoad={(map) => {
+                mapRef.current = map;
+              }}
+            />
           </LoadScript>
         </div>
       </div>

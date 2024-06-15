@@ -20,6 +20,11 @@ const images = [
   "./images/content/gallerymedia6.jpeg",
   "./images/content/gallerymedia7.jpeg",
   "./images/content/gallerymedia8.jpeg",
+  "./images/content/playground1.jpeg",
+  "./images/content/playground2.jpeg",
+  "./images/content/playground3.jpeg",
+  "./images/content/playground4.jpeg",
+  "./images/content/playground5.jpeg",
 ];
 
 function Galery({ language }) {

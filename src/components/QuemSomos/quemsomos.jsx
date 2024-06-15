@@ -51,7 +51,7 @@ function Whoweare({ language }) {
         <img
           className="img-whoweare"
           src="/images/content/nathanyAndBoys.jpeg"
-          alt="img-picture"
+          alt="boys"
         />
         <img
           className="img-whoweare"

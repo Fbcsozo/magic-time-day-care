@@ -29,7 +29,9 @@
 
 .location {
   flex: 1;
-  margin-right: 120px;
+  margin: 10px;
+  width: 50%;
+  height: 300px; /* Certifique-se de definir uma altura para o contêiner do mapa */
 }
 
 .twolines {
@@ -53,6 +55,7 @@
   height: auto;
   margin-right: 0px;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -70,7 +73,13 @@ ul {
   }
 
   .location {
-    margin-top: 20px;
+    max-width: 70%;
+    min-height: 250px; 
+  }
+
+  .google-map {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -79,15 +88,18 @@ ul {
     margin: 20px auto;
     list-style-type: none;
   }
+
   .data-info {
     min-height: 830px;
   }
+
   .content {
     padding-top: 70px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
   .infos {
     width: 90%;
     text-align: center;
@@ -96,8 +108,8 @@ ul {
   }
 
   .location {
-    width: 90%;
-    margin: 0;
+    width: 70%;
+    min-height: 300px; 
   }
 
   .logo-final {
