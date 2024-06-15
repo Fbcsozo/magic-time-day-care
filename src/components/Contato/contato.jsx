@@ -23,8 +23,8 @@ function Contact({ language }) {
   };
 
   const mapStyles = {
-    height: "400px",
-    width: "100%",
+    height: "250px",
+    width: "70%",
   };
 
   const defaultCenter = useMemo(() => {

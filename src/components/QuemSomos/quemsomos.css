@@ -30,8 +30,8 @@
 
 .row-images {
   position: absolute;
-  top: 21vh;
-  right: 10vw;
+  top: 30vh;
+  right: 15vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -53,13 +53,11 @@
     text-align: justify;
   }
   .row-images {
-    position: static;
     margin-top: 20px;
     align-items: center;
-    padding: 0;
     flex-direction: row;
-    padding-left: 10vw;
-    bottom: 0vh;
+    margin-right: 30px;
+    
   }
   .img-whoweare {
     width: 120px;
